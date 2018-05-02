@@ -1,0 +1,13 @@
+$small:28em;
+$medium:40em;
+$large:66em;
+$content-area-max:1280px;
+
+@media all and (min-width:$small){
+  html,body{
+    width: 100%!important;
+    width: 100vw!important;
+    height: 100%!important;
+    height: 100vh!important;
+  }
+}
