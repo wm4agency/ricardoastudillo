@@ -1,0 +1,6 @@
+.astudillo{
+  background-image: $astudillo;
+  @include img_sprite();
+
+  h1,h2,h3{display: none;}
+}
