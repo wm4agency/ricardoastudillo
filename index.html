@@ -19,8 +19,7 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/base.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,42 +40,87 @@
   </ul>
 </nav>
 <div id="panel">
-  <section id="hero">
-    <hgroup>
+  <header id="hero">
+    <hgroup class="idastudillo">
       <h1>Ricardo Astudillo</h1>
       <h2>candidato a presidente municipal</h2>
       <h3>municipio de Corregidora, Querétaro</h3>
     </hgroup>
-    <div>
-
+    <figure class="corregidoraposible">
+      <hgroup>
+        <h3>Corregidora</h3>
+        <h4>¡Posible!</h4>
+      </hgroup>
+    </figure>
+    <div class="coalicion">
+      <figure class="pri"></figure>
+      <figure class="verde"></figure>
     </div>
-  </section>
+  </header>
   <section id="intro">
-
+    <main>
+      <p>
+        Arquitecto titulado, Ricardo Astudillo Suárez es presidente del Partido Verde Ecologista de Méxcio en Querétaro.  En su trayectoria ha sido regidor del Municipio de Corregidora (2006 - 2009), Diputado local al congreso de Querétaro (2009 - 2012), y Diputado Federal por el distrito 2 de Querétaro.  En el congreso ocupó los cargos de secretario de la comisión de Energía e integrante de las comisiones de Medio Ambiente y Recursos Naturales y de Presupuesto y Cuenta Pública y en la comisión especial  de casos de corrupción ocurridos en Petróleos Mexicanos.
+      </p>
+    </main>
+    <blockquote>
+      "Un corregidora unido,<br /> con mejores servicios,<br /> mucho mas fuerte<br /> y mejor para todos"
+    </blockquote>
   </section>
   <section id="comunidades">
-
+    <article class="socialbox facebook">
+      <figure class="fa fa-facebook"></figure>
+    </article>
+    <article class="socialbox twitter">
+      <figure class="fa fa-twitter"></figure>
+    </article>
+    <article class="socialbox instagram">
+      <figure class="fa fa-instagram"></figure>
+    </article>
   </section>
   <section id="buzon">
-
+    <form class="buzon">
+      <fieldset>
+        <hgroup>
+          <h3>Buzón <br />Ciudadano</h3>
+          <h4>Queremos escucharte</h4>
+          <p>Comparte con Ricardo los problemas en tu comunidad, y/o las propuestase ideas para construir un Corregidora mas robusto, justo y mejor para todos.</p>
+        </hgroup>
+        <input type="email" name="correo" id="correo" placeholder="correo electrónico" class="required">
+        <input type="text" name="nombre" id="nombre" placeholder="nombre (opcional)">
+        <textarea name="mensaje" id="mensaje" rows="3" placeholder="propuesta/solicitud" class="required"></textarea>
+        <input type="button" name="send" value="enviar" class="send">
+      </fieldset>
+    </form>
   </section>
   <section id="reclutamiento">
-
+    <form class="sign-in">
+      <fieldset>
+        <hgroup>
+          <h3>¡Participa!</h3>
+          <p>
+            Si compartes nuestra visión de un mejor Corregidora, ¡Súmate a la causa! Regístrate como simpatizante y participa en las acciones que se realizarán en tu comunidad.
+          </p>
+          <p> Con tu apoyo ganaremos.</p>
+        </hgroup>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" class="required">
+        <input type="email" name="correo" id="correo" placeholder="correo electrónico" class="required">
+        <input type="tel" name="telefono" id="telefono" placeholder="teléfono (whatsapp)" class="required">
+        <input type="number" name="edad" id="edad" placeholder="edad" class="required">
+        <input type="text" name="comunidad" id="comunidad" placeholder="comunidad" class="required">
+        <input type="button" name="send" value="enviar" class="send">
+      </fieldset>
+    </form>
   </section>
   <footer>
-
+    <hgroup class="idastudillo">
+      <h1>Ricardo Astudillo</h1>
+      <h2>candidato a presidente municipal</h2>
+      <h3>municipio de Corregidora, Querétaro</h3>
+    </hgroup>
   </footer>
 
 </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
