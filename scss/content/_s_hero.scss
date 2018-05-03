@@ -1,4 +1,10 @@
 header#hero{
+    height: 100%;
+    height: 100vh;
+    background-color: $a_grey_shade ;
+    background: url(../images/Ricardo_Astudillo_Suarez-002.jpg) no-repeat center center;
+    background-size: cover;
+
     .astudillo{
       width: 100%;
       right: auto;
