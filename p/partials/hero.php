@@ -4,7 +4,7 @@
     <h2>candidato a presidente municipal</h2>
     <h3>municipio de Corregidora, Querétaro</h3>
   </hgroup>
-  <figure class="corregidoraposible">
+  <figure class="corregidora">
     <hgroup>
       <h3>Corregidora</h3>
       <h4>¡Posible!</h4>

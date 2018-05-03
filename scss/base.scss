@@ -3,4 +3,9 @@
 @import "core/skeleton";
 @import "core/variables";
 
-@import "content/registry"
+@import "components/animate/animate";
+@import "components/hamburgers/hamburgers";
+@import "components/main_menu";
+
+@import "content/globals";
+@import "content/s_hero"

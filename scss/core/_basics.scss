@@ -9,5 +9,19 @@ $content-area-max:1280px;
     width: 100vw!important;
     height: 100%!important;
     height: 100vh!important;
+    position: absolute;
   }
+}
+
+body{animation: small 0.001s;}
+
+
+@keyframes small{
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+
+@keyframes large {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
 }

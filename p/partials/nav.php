@@ -1,5 +1,15 @@
+<button class="hamburger hamburger--arrow-r m-nav-toggler" type="button">
+   <span class="hamburger-box">
+     <span class="hamburger-inner"></span>
+   </span>
+</button>
 <nav id="m-menu">
-  <figure data-target="home" class="wm4"></figure>
+  <hgroup class="astudillo">
+    <h1>Ricardo Astudillo</h1>
+    <h2>candidato a presidente municipal</h2>
+    <h3>municipio de Corregidora, Querétaro</h3>
+  </hgroup>
+
   <ul>
     <li>Ricardo</li>
     <li>comunidades</li>

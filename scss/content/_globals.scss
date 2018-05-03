@@ -1,6 +1,46 @@
-.astudillo{
-  background-image: $astudillo;
-  @include img_sprite();
+button.hamburger{
+  position: absolute;
+  top:1em;
+  right: 1em;
+  z-index: 999;
+  display: block;
+  &:hover{@include bounce();}
+}
 
-  h1,h2,h3{display: none;}
+aside#slidding_menu, div#panel{
+  position: absolute;
+  height: 100vh!important;
+  height: 100%;
+  width: 100vw;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+
+.astudillo{
+  @include img_sprite();
+  background-image: $astudillo;
+  background-size: contain;
+  overflow: hidden;
+  width: 70%;
+  height: auto;
+  @include fadeIn();
+
+  &::after{padding-bottom: 50%;}
+
+  h1,h2,h3{position: absolute;left: -300%;}
+}
+
+.corregidora{
+  @include img_sprite();
+  background-image: $corregidora;
+  background-size: contain;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  &::after{padding-bottom: 50%;}
+
+  h1,h2,h3,h4{position: absolute;left: -300%;}
 }
