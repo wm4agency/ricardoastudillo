@@ -1,20 +1,22 @@
-$small:28em;
-$medium:40em;
-$large:66em;
+$small:300px;
+$medium:650px;
+$large:960px;
 $content-area-max:1280px;
 
-@media all and (min-width:$small){
+@media (min-width:$small){
   html,body{
     width: 100%!important;
     width: 100vw!important;
     height: 100%!important;
     height: 100vh!important;
-    position: absolute;
+    body{animation: small 0.001s;}
   }
 }
 
-body{animation: small 0.001s;}
 
+@media (min-width:$large){
+  body{animation: large 0.001s;}
+}
 
 @keyframes small{
   from { clip: rect(1px, auto, auto, auto); }

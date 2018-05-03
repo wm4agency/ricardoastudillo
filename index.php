@@ -6,8 +6,8 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
   <?php include_once "p/partials/nav.php"; ?>
 </aside>
  <div id="panel">
-   <button class="hamburger hamburger--arrow m-nav-toggler" type="button">
-      <span class="hamburger-box">
+   <button class="hamburger hamburger--arrow" type="button">
+      <span class="hamburger-box m-nav-toggler">
         <span class="hamburger-inner"></span>
       </span>
    </button>

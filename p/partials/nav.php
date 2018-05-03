@@ -1,5 +1,5 @@
-<button class="hamburger hamburger--arrow-r m-nav-toggler" type="button">
-   <span class="hamburger-box">
+<button class="hamburger hamburger--arrow-r" type="button">
+   <span class="hamburger-box m-nav-toggler">
      <span class="hamburger-inner"></span>
    </span>
 </button>

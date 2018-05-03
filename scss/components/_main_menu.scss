@@ -1,12 +1,82 @@
-aside#slidding_menu{
-  background-color: $a_green;
+aside#slidding_menu, div#panel{
+  width: 100%;
+  min-height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+
+  &::-webkit-scrollbar{
+      width: 5px;
+      background-color: $dark;
+  }
+
+  &::-webkit-scrollbar-track {
+      -webkit-box-shadow: none;
+      background-color: $dark;
+  }
+  &::-webkit-scrollbar-thumb {
+      background-color: $dark;
+      border: none;
+  }
 }
 
- div#panel{
-   display: none;
+aside#slidding_menu{
+    background-color: $a_green;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
 
-   nav{
-     padding: 1em;
-     width: 100%;
-   }
- }
+    nav{
+        position: absolute;
+        width: 90%;
+        padding: 1.5em;
+        margin: 0;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        ul.unidades li{
+            //@extend %serif;
+            font-size: 1.25em;
+            line-height: 1.75em;
+            padding-bottom: .5em;
+            text-transform: uppercase;
+            font-weight: 100;
+
+            &:hover, &:active{color: $dark;}
+        }
+
+        ul.sociales li{
+            display: inline-block;
+            .fa{
+                font-size: 1.5em;
+                padding: 10px;
+                //margin-top: 50px;
+                color: $dark;
+
+                &:hover, &:active{color: $w;}
+            }
+        }
+    }
+}
+div#panel{
+    background-color: $w;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+
+    &.sliding{
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translatex(100%);
+    }
+
+}

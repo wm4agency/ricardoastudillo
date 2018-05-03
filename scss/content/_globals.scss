@@ -4,6 +4,8 @@ button.hamburger{
   right: 1em;
   z-index: 999;
   display: block;
+  touch-action: none;
+  
   &:hover{@include bounce();}
 }
 
