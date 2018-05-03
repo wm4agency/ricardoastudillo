@@ -2,10 +2,15 @@
 if (! include_once "p/partials/head.php"){echo "no head found";die();}
  ?>
 
-<aside>
+<aside id="slidding_menu">
   <?php include_once "p/partials/nav.php"; ?>
 </aside>
  <div id="panel">
+   <button class="hamburger hamburger--arrow m-nav-toggler" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+   </button>
    <header id="hero">
      <?php include_once "p/partials/hero.php"; ?>
    </header>
@@ -30,4 +35,6 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
    </footer>
  </div>
 </body>
+<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='js/scripts.js'></script>
 </html>
