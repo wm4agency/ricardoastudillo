@@ -7,12 +7,12 @@ aside#slidding_menu, div#panel{
 
   &::-webkit-scrollbar{
       width: 5px;
-      background-color: $dark;
+      background-color: transparent;
   }
 
   &::-webkit-scrollbar-track {
       -webkit-box-shadow: none;
-      background-color: $dark;
+      background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
       background-color: $dark;

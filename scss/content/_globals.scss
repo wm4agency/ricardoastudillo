@@ -1,3 +1,7 @@
+body{
+  overflow-y: scroll;
+}
+
 button.hamburger{
   position: absolute;
   top:1em;
@@ -5,21 +9,10 @@ button.hamburger{
   z-index: 999;
   display: block;
   touch-action: none;
-  
+  color: $dark;
+
   &:hover{@include bounce();}
 }
-
-aside#slidding_menu, div#panel{
-  position: absolute;
-  height: 100vh!important;
-  height: 100%;
-  width: 100vw;
-  width: 100%;
-  margin: 0;
-  top: 0;
-  overflow: hidden;
-}
-
 
 .astudillo{
   @include img_sprite();

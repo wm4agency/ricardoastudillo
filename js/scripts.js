@@ -19,7 +19,8 @@ function mediaQueryBind() {
 }
 
 function delegateEvents(){
-    document.addEventListener('touchstart', function(e) {
+    //port touch events to click events
+    document.addEventListener('touchend', function(e) {
       /* prevent delay and simulated mouse events */
       e.stopPropagation();
       e.preventDefault();

@@ -971,12 +971,12 @@ aside#slidding_menu, div#panel {
   left: 0; }
   aside#slidding_menu::-webkit-scrollbar, div#panel::-webkit-scrollbar {
     width: 5px;
-    background-color: #1e1e1e; }
+    background-color: transparent; }
   aside#slidding_menu::-webkit-scrollbar-track, div#panel::-webkit-scrollbar-track {
     -webkit-box-shadow: none;
-    background-color: #1e1e1e; }
+    background-color: transparent; }
   aside#slidding_menu::-webkit-scrollbar-thumb, div#panel::-webkit-scrollbar-thumb {
-    background-color: #1e1e1e;
+    background-color: #3e3e3e;
     border: none; }
 
 aside#slidding_menu {
@@ -1003,18 +1003,18 @@ aside#slidding_menu {
       text-transform: uppercase;
       font-weight: 100; }
       aside#slidding_menu nav ul.unidades li:hover, aside#slidding_menu nav ul.unidades li:active {
-        color: #1e1e1e; }
+        color: #3e3e3e; }
     aside#slidding_menu nav ul.sociales li {
       display: inline-block; }
       aside#slidding_menu nav ul.sociales li .fa {
         font-size: 1.5em;
         padding: 10px;
-        color: #1e1e1e; }
+        color: #3e3e3e; }
         aside#slidding_menu nav ul.sociales li .fa:hover, aside#slidding_menu nav ul.sociales li .fa:active {
-          color: #f0f0f0; }
+          color: #f3f3f2; }
 
 div#panel {
-  background-color: #f0f0f0;
+  background-color: #f3f3f2;
   overflow-x: hidden;
   overflow-y: scroll;
   position: absolute;
@@ -1029,6 +1029,9 @@ div#panel {
     -ms-transform: translateX(100%);
     transform: translatex(100%); }
 
+body {
+  overflow-y: scroll; }
+
 button.hamburger {
   position: absolute;
   top: 1em;
@@ -1036,7 +1039,8 @@ button.hamburger {
   z-index: 999;
   display: block;
   -ms-touch-action: none;
-  touch-action: none; }
+  touch-action: none;
+  color: #3e3e3e; }
   button.hamburger:hover {
     -webkit-animation: bounce 1s ease 0.2s 1 both;
     -moz-animation: bounce 1s ease 0.2s 1 both;
@@ -1081,16 +1085,6 @@ button.hamburger {
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
-
-aside#slidding_menu, div#panel {
-  position: absolute;
-  height: 100vh !important;
-  height: 100%;
-  width: 100vw;
-  width: 100%;
-  margin: 0;
-  top: 0;
-  overflow: hidden; }
 
 .astudillo {
   position: relative;
