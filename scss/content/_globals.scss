@@ -2,16 +2,30 @@ body{
   overflow-y: scroll;
 }
 
+section,header{
+  position: relative;
+  width: 100%;
+  width: 100vw;
+  display: table;
+}
+
 button.hamburger{
   position: absolute;
-  top:1em;
-  right: 1em;
+  top:5px;
+  right: 5px;
   z-index: 999;
   display: block;
   touch-action: none;
   color: $dark;
 
   &:hover{@include bounce();}
+}
+
+%textImgSwap{
+  position: absolute;
+  left: -300%;
+  font-size: .5em;
+  z-index: -1;
 }
 
 .astudillo{
@@ -23,9 +37,9 @@ button.hamburger{
   height: auto;
   @include fadeIn();
 
-  &::after{padding-bottom: 50%;}
+  &::after{padding-bottom: 38%;}
 
-  h1,h2,h3{position: absolute;left: -300%;}
+  h1,h2,h3{@extend %textImgSwap;}
 }
 
 .corregidora{
@@ -37,5 +51,29 @@ button.hamburger{
   height: auto;
   &::after{padding-bottom: 50%;}
 
-  h1,h2,h3,h4{position: absolute;left: -300%;}
+  h1,h2,h3,h4{@extend %textImgSwap;}
+}
+
+.pri{
+  @include img_sprite();
+  background-image: $pri;
+  background-size: contain;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  &::after{padding-bottom: 100%;}
+
+  h5{@extend %textImgSwap;}
+}
+
+.verde{
+  @include img_sprite();
+  background-image: $partidoverde;
+  background-size: contain;
+  overflow: hidden;
+  width: 50%;
+  height: auto;
+  &::after{padding-bottom: 100%;}
+
+  h5{@extend %textImgSwap;}
 }
