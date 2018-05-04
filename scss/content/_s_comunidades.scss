@@ -2,4 +2,24 @@ section#comunidades{
   background-color: $a_grey_shade;
   height: 50%;
   height: 50vh;
+  width: 100%;
+  
+
+  article.socialbox{
+    width: 80%;
+    height: 50vh;
+    background-color: $w;
+    position: relative;
+    margin: -50 auto 0 auto;
+
+
+    figure{
+      position: absolute;
+      top:0;
+      width: 50px;
+      margin: -50 auto 0 auto;
+
+
+    }
+  }
 }

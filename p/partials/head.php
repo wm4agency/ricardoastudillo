@@ -25,5 +25,10 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- fontawesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="/js/fontawesome-all.js"></script>
+
+
 </head>
 <body>

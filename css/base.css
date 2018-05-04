@@ -1286,11 +1286,32 @@ header#hero {
 
 section#intro {
   padding: 1em 0; }
+  section#intro main p {
+    text-align: justify; }
+  section#intro blockquote {
+    width: 100%;
+    background-color: #b1ca07;
+    font-size: 2em;
+    color: #f3f3f2;
+    padding: .5em;
+    margin: 0; }
 
 section#comunidades {
   background-color: #babdb5;
   height: 50%;
-  height: 50vh; }
+  height: 50vh;
+  width: 100%; }
+  section#comunidades article.socialbox {
+    width: 80%;
+    height: 50vh;
+    background-color: #f3f3f2;
+    position: relative;
+    margin: -50 auto 0 auto; }
+    section#comunidades article.socialbox figure {
+      position: absolute;
+      top: 0;
+      width: 50px;
+      margin: -50 auto 0 auto; }
 
 section#buzon {
   background-color: #8c9086;
