@@ -871,6 +871,18 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+@font-face {
+  font-family: 'Gotham';
+  src: url("fonts/Gotham-Bold.woff2") format("woff2"), url("Gotham-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("Gotham-Book.woff2") format("woff2"), url("Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   -webkit-backface-visibility: hidden; }
 
@@ -1033,7 +1045,9 @@ div#panel {
     transform: translatex(100%); }
 
 body {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  font-family: "Gotham", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200; }
 
 section, header {
   position: relative;
@@ -1227,7 +1241,7 @@ header#hero {
     width: 100%;
     display: block; }
   header#hero div.coalicion {
-    width: 70%;
+    width: 50%;
     display: block;
     margin: 0 auto; }
     header#hero div.coalicion > figure {

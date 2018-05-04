@@ -9,6 +9,24 @@ $action-color: $a_green;
 $dark : #3e3e3e;
 $w: #f3f3f2;
 
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Bold.woff2') format('woff2'),
+        url('Gotham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$gotham:"Gotham","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 @mixin img_sprite(){
   position: relative;
   background: no-repeat center center;
