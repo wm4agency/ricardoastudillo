@@ -6,6 +6,7 @@ header#hero{
     background-size: cover;
 
     .astudillo{
+      @include astudilloSVG();
       width: 100%;
       right: auto;
       left: auto;

@@ -30,6 +30,9 @@ aside#slidding_menu{
     width: 100vw;
     z-index: 0;
 
+    .astudillo{
+      @include astudilloSVG($w);
+    }
     nav{
         position: absolute;
         width: 90%;

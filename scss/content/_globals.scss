@@ -32,7 +32,7 @@ button.hamburger{
 
 .astudillo{
   @include img_sprite();
-  background-image: $astudillo;
+  @include astudilloSVG();
   background-size: contain;
   overflow: hidden;
   width: 70%;
