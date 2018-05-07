@@ -1,5 +1,11 @@
 section#intro{
   padding-top: 1em;
+
+  figure.ribbon{
+    @include a_ribbon(bottom);
+    bottom:0;
+  }
+
   main p{text-align: justify;}
 
   blockquote{

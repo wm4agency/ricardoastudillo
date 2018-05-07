@@ -1,3 +1,4 @@
+<figure class="ribbon"></figure>
 <main>
   <div class="container">
     <p>

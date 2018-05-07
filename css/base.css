@@ -1358,6 +1358,19 @@ header#hero {
 
 section#intro {
   padding-top: 1em; }
+  section#intro figure.ribbon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417.5 1279.6'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300A49A;%7D .st1%7Bfill:%23B1CA07;%7D .st2%7Bfill:%238C9086;%7D .st3%7Bfill:%23B90066;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='417.5 959.7 228.5 959.7 0 1279.6 189 1279.6 '/%3E%3Cpolygon class='st1' points='417.5 319.9 228.5 319.9 0 0 189 0 '/%3E%3Cpolygon class='st2' points='417.5 319.9 228.5 319.9 0 639.8 189 639.8 '/%3E%3Cpolygon class='st3' points='417.5 959.7 228.5 959.7 0 639.8 189 639.8 '/%3E%3C/svg%3E");
+    background-position: left bottom;
+    background-size: 135px;
+    background-repeat: repeat-y;
+    z-index: 10;
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0; }
   section#intro main p {
     text-align: justify; }
   section#intro blockquote {
