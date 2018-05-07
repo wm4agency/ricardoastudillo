@@ -1402,7 +1402,28 @@ section#comunidades {
 
 section#buzon {
   background-color: #8c9086;
-  color: #f3f3f2; }
+  color: #3e3e3e; }
+  section#buzon form {
+    margin: 25px 0; }
+  section#buzon legend {
+    width: 100%; }
+    section#buzon legend h3 {
+      font-size: 5rem;
+      line-height: 1;
+      letter-spacing: -.1rem;
+      text-transform: uppercase;
+      margin: 0;
+      color: #f3f3f2; }
+    section#buzon legend .fa, section#buzon legend .svg-inline--fa {
+      display: inline;
+      height: 5rem;
+      color: #b1ca07;
+      margin-right: 1rem; }
+    section#buzon legend h4 {
+      color: black;
+      margin: 0; }
+    section#buzon legend p {
+      font-weight: 300; }
 
 section#reclutamiento input {
   color: #b1ca07; }

@@ -1,4 +1,28 @@
 section#buzon{
   background-color: $a_grey;
-  color: $w;
+  color: $dark;
+  form{margin: 25px 0;}
+
+  legend{
+    width: 100%;
+
+    h3{
+      font-size: 5rem;
+      line-height: 1;
+      letter-spacing: -.1rem;
+      text-transform: uppercase;
+      margin: 0;
+      color: $w;
+    }
+    .fa,.svg-inline--fa{
+      display: inline;
+      height: 5rem;
+      color: $a-green;
+      margin-right: 1rem;
+    }
+    h4{color: black; margin:0;}
+    p{
+      font-weight: 300;
+    }
+  }
 }
