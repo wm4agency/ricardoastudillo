@@ -5,9 +5,9 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Corregidora Posible</title>
+  <meta name="description" content="Ricardo Astudillo, candidato a Presidente Municipal del municipio de Corregidora, Querétaro.">
+  <meta name="author" content="wm4">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,8 +27,7 @@
 
   <!-- fontawesome
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script defer src="/js/fontawesome-all.js"></script>
-
+  <script defer src="js/fontawesome-all.min.js"></script>
 
 </head>
 <body>

@@ -29,3 +29,24 @@ $content-area-max:1280px;
   from { clip: rect(1px, auto, auto, auto); }
   to { clip: rect(0px, auto, auto, auto); }
 }
+
+@mixin circle($size: 100px) {
+	width: $size;
+	height: $size;
+  position: relative;
+
+	-webkit-border-radius: $size / 2 + 0px;
+	-moz-border-radius: $size / 2 + 0px;
+	border-radius: $size / 2 + 0px;
+
+  & > div, span, article, figure {
+    width: $size - $size*0.3;
+    height: $size - $size*0.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%);
+    margin: auto;
+    text-align: center;
+  }
+}

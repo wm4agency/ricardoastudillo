@@ -1,12 +1,12 @@
 <form class="sign-in">
   <fieldset>
-    <hgroup>
+    <legend>
       <h3>¡Participa!</h3>
       <p>
         Si compartes nuestra visión de un mejor Corregidora, ¡Súmate a la causa! Regístrate como simpatizante y participa en las acciones que se realizarán en tu comunidad.
       </p>
       <p> Con tu apoyo ganaremos.</p>
-    </hgroup>
+    </legend>
     <input type="text" name="nombre" id="nombre" placeholder="nombre" class="required">
     <input type="email" name="correo" id="correo" placeholder="correo electrónico" class="required">
     <input type="tel" name="telefono" id="telefono" placeholder="teléfono (whatsapp)" class="required">

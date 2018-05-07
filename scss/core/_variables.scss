@@ -13,15 +13,28 @@ $w: #f3f3f2;
     font-family: 'Gotham';
     src: url('fonts/Gotham-Bold.woff2') format('woff2'),
         url('Gotham-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Gotham';
-    src: url('Gotham-Book.woff2') format('woff2'),
-        url('Gotham-Book.woff') format('woff');
-    font-weight: normal;
+    src: url('fonts/Gotham-Book.woff2') format('woff2'),
+        url('fonts/Gotham-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Light.woff2') format('woff2'),
+        url('fonts/Gotham-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Black.woff2') format('woff2'),
+        url('fonts/Gotham-Black.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -32,19 +45,27 @@ $gotham:"Gotham","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
 ::-moz-selection { background:$action-color; color:$w; text-shadow:none }
 ::-webkit-selection { background:$action-color; color:$w; text-shadow:none }
 
-@mixin img_sprite(){
+@mixin img_sprite($padding-bottom:25%){
   position: relative;
   background: no-repeat center center;
   margin: 0;
   padding: 0;
+  background-size: cover;
 
   &::after{
     content: "";
-    padding-bottom: 25%;
+    padding-bottom: $padding-bottom;
     display: block;
     position: relative;
   }
 }
+
+@mixin box-shadow($top:1px, $left:2px, $blur:2px, $color:rgba(0, 0, 0, 0.25), $inset:"") {
+
+      -webkit-box-shadow:$top $left $blur $color #{$inset};
+      -moz-box-shadow:$top $left $blur $color #{$inset};
+      box-shadow:$top $left $blur $color #{$inset};
+    }
 
 $pri: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23B9B9B9;%7D .st1%7Bfill:%23E20613;%7D .st2%7Bfill:%23009540;%7D .st3%7Bfill:%23FFFFFF;%7D .st4%7Bfill:%23090400;%7D%0A%3C/style%3E%3Cpath class='st0' d='M500 429V71c0-71-71-71-71-71H250 71C71 0 0 0 0 71v358c0 0 0 71 71 71h179 179C500 500 500 429 500 429'/%3E%3Cpath class='st1' d='M283.8 45.3C384.9 61 462.3 148.4 462.3 253.9c0 105.5-77.4 192.9-178.4 208.6V45.3z'/%3E%3Cpath class='st2' d='M39.9 253.9c0-102.1 72.5-187.3 168.8-206.9v413.9C112.4 441.2 39.9 356 39.9 253.9'/%3E%3Crect x='184.4' class='st3' width='140.7' height='498.3'/%3E%3Crect x='354.8' y='164.2' class='st3' width='43.6' height='171.8'/%3E%3Cpath class='st3' d='M113.1 194.8v45.1h8.9c0 0 8-0.3 8-9.8v-22.5c0 0 1-12.8-8.1-12.8H113.1zM69.6 167c0 0 63.4 0.1 66.2 0.4 5.8 0.5 33.3 5.3 33.3 30.8v41.7c0 0-4.7 30.6-33.3 30.6h-22.5v68.4H69.6V167z'/%3E%3Cpath class='st4' d='M248.5 135v39.3h8.2c0 0 7.3-0.3 7.3-9.5v-17.4c0 0 0.9-12.4-7.4-12.4H248.5zM205.1 106.9h70.6c0 0 27.6 3.8 27.6 31.4v29.3c0 0-0.2 11.7-11.6 21.3 -0.2 0.4 13.3 4.2 13.3 22.4v67.3h-40.8v-67.1c0 0-1.9-10.5-15.9-7.3 -0.2 0.4 0 74.6 0 74.6h-43.1V106.9z'/%3E%3C/svg%3E");
 
