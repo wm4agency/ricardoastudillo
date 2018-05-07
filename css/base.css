@@ -620,9 +620,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
+  text-align: right;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
@@ -631,8 +629,6 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -688,13 +684,14 @@ select {
   height: 38px;
   padding: 6px 10px;
   /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #D1D1D1;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%; }
 
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
@@ -730,7 +727,7 @@ label,
 legend {
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  font-weight: 300; }
 
 fieldset {
   padding: 0;
@@ -1153,6 +1150,13 @@ button.hamburger {
   60% {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
+
+button::after,
+input[type="submit"]::after,
+input[type="reset"]::after,
+input[type="button"]::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233e3e3e;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='301.6 0.2 20.3 0.2 198.9 250.2 20.3 500.2 301.6 500.2 480.2 250.2 '/%3E%3C/svg%3E");
+  padding-bottom: 100%; }
 
 .astudillo h1, .astudillo h2, .astudillo h3, .corregidora h1, .corregidora h2, .corregidora h3, .corregidora h4, .pri h5, .verde h5 {
   position: absolute;

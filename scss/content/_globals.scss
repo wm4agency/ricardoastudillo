@@ -23,6 +23,16 @@ button.hamburger{
   &:hover{@include bounce();}
 }
 
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &::after{
+    @include a_arrow();
+    padding-bottom: 100%;
+  }
+}
+
 %textImgSwap{
   position: absolute;
   left: -300%;
