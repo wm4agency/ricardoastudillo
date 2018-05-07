@@ -26,6 +26,7 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
      </div>
    </section>
    <section id="reclutamiento">
+     <figure class="ribbon"></figure>
      <div class="container">
        <?php include_once "p/components/forma_registro.php"; ?>
        <figure class="corregidora">

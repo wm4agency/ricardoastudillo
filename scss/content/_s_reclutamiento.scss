@@ -1,14 +1,19 @@
 section#reclutamiento{
-  input{color: $a_green;}
 
-  form{margin: 25px 0;}
+  figure.ribbon{
+    @include a_ribbon(top, 25%);
+    bottom:0;
+  }
+
+  form{margin: 25px 0;width: 78%;}
   legend{
+    overflow: hidden;
     .fa,.svg-inline--fa{
       font-size: 3em;
       color: $a_grey;
     }
     h3{
-      font-size: 3em;
+      font-size: 2.5em;
       color: $a_green;
       margin: 0;
       text-transform: uppercase;
