@@ -27,8 +27,14 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  &::after{
+  border: none;
+  text-align: right;
+  float: right;
+  font-size: 1.5em;
+
+  &:after{
     @include a_arrow();
+    content:"!";
     padding-bottom: 100%;
   }
 }

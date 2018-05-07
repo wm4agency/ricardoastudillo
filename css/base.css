@@ -1151,12 +1151,21 @@ button.hamburger {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px); } }
 
-button::after,
-input[type="submit"]::after,
-input[type="reset"]::after,
-input[type="button"]::after {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233e3e3e;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='301.6 0.2 20.3 0.2 198.9 250.2 20.3 500.2 301.6 500.2 480.2 250.2 '/%3E%3C/svg%3E");
-  padding-bottom: 100%; }
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border: none;
+  text-align: right;
+  float: right;
+  font-size: 1.5em; }
+  button:after,
+  input[type="submit"]:after,
+  input[type="reset"]:after,
+  input[type="button"]:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%233e3e3e;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='301.6 0.2 20.3 0.2 198.9 250.2 20.3 500.2 301.6 500.2 480.2 250.2 '/%3E%3C/svg%3E");
+    content: "!";
+    padding-bottom: 100%; }
 
 .astudillo h1, .astudillo h2, .astudillo h3, .corregidora h1, .corregidora h2, .corregidora h3, .corregidora h4, .pri h5, .verde h5 {
   position: absolute;
