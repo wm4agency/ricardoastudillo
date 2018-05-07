@@ -28,6 +28,12 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
    <section id="reclutamiento">
      <div class="container">
        <?php include_once "p/components/forma_registro.php"; ?>
+       <figure class="corregidora">
+         <hgroup>
+           <h3>Corregidora</h3>
+           <h4>¡Posible!</h4>
+         </hgroup>
+       </figure>
      </div>
    </section>
    <footer>

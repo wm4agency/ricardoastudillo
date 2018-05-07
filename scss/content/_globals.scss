@@ -30,7 +30,7 @@ input[type="button"] {
   border: none;
   text-align: right;
   float: right;
-  font-size: 1.5em;
+  font-size: 1em;
 
   &::after{
     @include a_arrow();

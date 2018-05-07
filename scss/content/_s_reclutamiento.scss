@@ -1,3 +1,24 @@
 section#reclutamiento{
   input{color: $a_green;}
+
+  form{margin: 25px 0;}
+  legend{
+    .fa,.svg-inline--fa{
+      font-size: 3em;
+      color: $a_grey;
+    }
+    h3{
+      font-size: 3em;
+      color: $a_green;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    p{font-size: .95em;}
+  }
+
+  input[type]{
+    border-bottom-color: $a_green;
+    &::placeholder{color:$a_green;}
+  }
 }
