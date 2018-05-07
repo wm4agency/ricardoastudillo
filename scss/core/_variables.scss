@@ -8,6 +8,7 @@ $a_grey_shade: #babdb5;
 $action-color: #9ab006;
 $dark : #3e3e3e;
 $w: #f3f3f2;
+$silver: #D1D1D1;
 
 @font-face {
     font-family: 'Gotham';
@@ -45,6 +46,31 @@ $gotham:"Gotham","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
 ::-moz-selection { background:$action-color; color:$w; text-shadow:none }
 ::-webkit-selection { background:$action-color; color:$w; text-shadow:none }
 
+@mixin placeholder($color:#1e1e1e,$f-size:1em,$transform:""){
+  color:$color;
+  font-size: $f-size;
+  text-transform: $transform;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:$color;
+    font-size: $f-size;
+    text-transform: $transform;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color:$color;
+    font-size: $f-size;
+    text-transform: $transform;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color:$color;
+    font-size: $f-size;
+    text-transform: $transform;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color:$color;
+    font-size: $f-size;
+    text-transform: $transform;
+  }
+}
 @mixin img_sprite($padding-bottom:25%){
   position: relative;
   background: no-repeat center center;

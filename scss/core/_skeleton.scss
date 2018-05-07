@@ -242,6 +242,9 @@ select {
   box-shadow: none;
   box-sizing: border-box;
   width: 100%;}
+
+textarea{  border: 1px solid #D1D1D1;
+;}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],

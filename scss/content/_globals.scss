@@ -32,7 +32,7 @@ input[type="button"] {
   float: right;
   font-size: 1.5em;
 
-  &:after{
+  &::after{
     @include a_arrow();
     content:"!";
     padding-bottom: 100%;
