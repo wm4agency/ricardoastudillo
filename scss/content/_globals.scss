@@ -33,10 +33,11 @@ input[type="button"].arrow, form button[type="submit"] {
   float: right;
   font-size: 1em;
   padding-right: 1.15em;
+  color: $a-green;
 
   &::after{
     background: no-repeat center center;
-    @include a_arrow();
+    @include a_arrow($a-green);
     position: absolute;
     right: 0;
     top: 50%;
@@ -44,6 +45,10 @@ input[type="button"].arrow, form button[type="submit"] {
     width: .95em;
     transform: translateY(-50%);
   }
+}
+
+input[type].required::placeholder{
+  color: crimson;
 }
 
 %textImgSwap{
