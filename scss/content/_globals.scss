@@ -23,19 +23,26 @@ button.hamburger{
   &:hover{@include bounce();}
 }
 
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+button.arrow,
+input[type="submit"].arrow,
+input[type="reset"].arrow,
+input[type="button"].arrow, form button[type="submit"] {
+  @include img_sprite(1em);
   border: none;
   text-align: right;
   float: right;
   font-size: 1em;
+  padding-right: 1.15em;
 
   &::after{
+    background: no-repeat center center;
     @include a_arrow();
-    content:"!";
-    padding-bottom: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: auto;
+    width: .95em;
+    transform: translateY(-50%);
   }
 }
 

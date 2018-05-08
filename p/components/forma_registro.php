@@ -11,6 +11,6 @@
     <input type="tel" name="telefono" id="telefono" placeholder="teléfono (whatsapp)" class="required">
     <input type="number" name="edad" id="edad" placeholder="edad" class="required">
     <input type="text" name="comunidad" id="comunidad" placeholder="comunidad" class="required">
-    <input type="button" name="send" value="enviar" class="send">
+    <button type="submit" name="send" value="enviar" class="send">enviar</button>
   </fieldset>
 </form>
