@@ -37,4 +37,16 @@ header#hero{
         &:first-child{margin-right: 5%}
       }
     }
+    @media (min-width:$large){
+      background: url(../images/Ricardo_Astudillo-back-dkp.jpg) no-repeat center center;
+      background-size: cover;
+
+      .astudillo{
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        top:50%;
+        transform: translateY(50%);
+      }
+    }
   }

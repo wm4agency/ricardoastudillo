@@ -12,7 +12,9 @@
 @media (min-width: 960px) {
   body {
     -webkit-animation: large 0.001s;
-    animation: large 0.001s; } }
+    animation: large 0.001s; }
+  button.hamburger {
+    display: none !important; } }
 
 @-webkit-keyframes small {
   from {
@@ -1112,6 +1114,33 @@ aside#slidding_menu {
         color: #3e3e3e; }
         aside#slidding_menu nav ul.sociales li .fa:hover, aside#slidding_menu nav ul.sociales li .fa:active {
           color: #f3f3f2; }
+  @media (min-width: 960px) {
+    aside#slidding_menu {
+      min-height: auto;
+      height: 2em;
+      background: none;
+      z-index: 99; }
+      aside#slidding_menu .astudillo {
+        display: none; }
+      aside#slidding_menu nav {
+        width: 100%;
+        left: 0;
+        top: 0;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        text-align: left; }
+        aside#slidding_menu nav ul li {
+          font-size: .75em;
+          color: #3e3e3e;
+          display: inline-block;
+          text-align: left;
+          line-height: 2em;
+          padding: 0 .5em; }
+          aside#slidding_menu nav ul li:hover {
+            cursor: pointer;
+            color: #f3f3f2;
+            background-color: rgba(154, 176, 6, 0.5); } }
 
 div#panel {
   background-color: #f3f3f2;
@@ -1389,6 +1418,18 @@ header#hero {
       float: left; }
       header#hero div.coalicion > figure:first-child {
         margin-right: 5%; }
+  @media (min-width: 960px) {
+    header#hero {
+      background: url(../images/Ricardo_Astudillo-back-dkp.jpg) no-repeat center center;
+      background-size: cover; }
+      header#hero .astudillo {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        top: 50%;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%); } }
 
 section#intro {
   padding-top: 1em; }

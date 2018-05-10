@@ -12,5 +12,6 @@
     <input type="number" name="edad" id="edad" placeholder="edad" class="required">
     <input type="text" name="comunidad" id="comunidad" placeholder="comunidad" class="required">
     <button type="submit" name="send" value="enviar" class="send">enviar</button>
+    <input type="hidden" id="cat" name="cat" value="registro">
   </fieldset>
 </form>

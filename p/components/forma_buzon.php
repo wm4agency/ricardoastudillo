@@ -11,5 +11,6 @@
     <input type="text" name="nombre" id="nombre" placeholder="nombre (opcional)">
     <textarea name="mensaje" id="mensaje" rows="3" placeholder="propuesta/solicitud" class="required"></textarea>
     <button type="submit" name="send" value="enviar" class="send">enviar</button>
+    <input type="hidden" id="cat" name="cat" value="buzon">
   </fieldset>
 </form>

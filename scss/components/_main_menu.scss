@@ -76,6 +76,36 @@ aside#slidding_menu{
             }
         }
     }
+
+    @media (min-width:$large){
+      min-height: auto;
+      height: 2em;
+      background: none;
+      z-index: 99;
+
+      .astudillo{display: none;}
+
+      nav {
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+        text-align: left;
+
+        ul li{
+          font-size: .75em;
+          color: $dark;
+          display: inline-block;
+          text-align: left;
+          line-height: 2em;
+          //margin-right: .5em;
+          padding: 0 .5em;
+
+          //&:last-child{margin-right: 0;}
+          &:hover{cursor: pointer;color: $w; background-color: transparentize($action-color,.5)}
+        }
+      }
+    }
 }
 div#panel{
     background-color: $w;

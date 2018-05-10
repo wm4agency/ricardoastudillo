@@ -11,9 +11,9 @@
   </hgroup>
 
   <ul>
-    <li>Ricardo</li>
-    <li>comunidades</li>
-    <li>buzón ciudadano</li>
-    <li>únete</li>
+    <li data-target="#intro">Ricardo</li>
+    <li data-target="#comunidades">comunidades</li>
+    <li data-target="#buzon">buzón ciudadano</li>
+    <li data-target="#reclutamiento">únete</li>
   </ul>
 </nav>

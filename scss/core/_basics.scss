@@ -18,6 +18,7 @@ $content-area-max:1280px;
 
 @media (min-width:$large){
   body{animation: large 0.001s;}
+    button.hamburger{display:none!important;}
 }
 
 @keyframes small{
