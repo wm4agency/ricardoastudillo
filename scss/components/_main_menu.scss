@@ -16,13 +16,13 @@ aside#slidding_menu, div#panel{
       background-color: transparent;
   }
   &::-webkit-scrollbar-thumb {
-      background-color: $dark;
+      background-color: $a_green;
       border: none;
   }
 }
 
 aside#slidding_menu{
-    background-color: $a_green;
+    background-color: $a_grey;
     @include astudilloAbst($action-color);
     background-size: 200%;
     position: fixed;
@@ -35,7 +35,7 @@ aside#slidding_menu{
     button.hamburger{color: $w;}
 
     .astudillo{
-      @include astudilloSVG($w);
+      @include astudillo($a_green,$a_green_dark,$w,$w);
       width: 100%;
       margin: 0 auto 3em auto;
 
@@ -82,6 +82,7 @@ aside#slidding_menu{
       height: 2em;
       background: none;
       z-index: 99;
+      position: absolute;
 
       .astudillo{display: none;}
 

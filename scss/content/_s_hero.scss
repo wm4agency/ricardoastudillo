@@ -2,11 +2,12 @@ header#hero{
     height: 100%;
     height: 100vh;
     background-color: $a_grey_shade ;
-    background: url(../images/Ricardo_Astudillo_Suarez-mv.jpg) no-repeat center center;
+    background: url(../images/Ricardo_Astudillo_Suarez-mv.jpg) no-repeat center center fixed;
     background-size: cover;
+    background-attachment: fixed;
 
     .astudillo{
-      @include astudilloSVG();
+      @include astudillo();
       width: 100%;
       right: auto;
       left: auto;
@@ -38,7 +39,7 @@ header#hero{
       }
     }
     @media (min-width:$large){
-      background: url(../images/Ricardo_Astudillo-back-dkp.jpg) no-repeat center center;
+      background: url(../images/Ricardo_Astudillo-back-dkp.jpg) no-repeat center center fixed;
       background-size: cover;
 
       .astudillo{

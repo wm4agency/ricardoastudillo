@@ -60,7 +60,7 @@ input[type].required::placeholder{
 
 .astudillo{
   @include img_sprite();
-  @include astudilloSVG();
+  @include astudillo();
   background-size: contain;
   overflow: hidden;
   width: 70%;
@@ -74,7 +74,7 @@ input[type].required::placeholder{
 
 .corregidora{
   @include img_sprite();
-  background-image: $corregidora;
+  @include corregidora();
   background-size: contain;
   overflow: hidden;
   width: 50%;
@@ -84,6 +84,7 @@ input[type].required::placeholder{
   h1,h2,h3,h4{@extend %textImgSwap;}
 }
 
+.partidoswrapp,.flechaswrapp{width: 50%;}
 .pri{
   @include img_sprite();
   background-image: $pri;
@@ -106,4 +107,14 @@ input[type].required::placeholder{
   &::after{padding-bottom: 100%;}
 
   h5{@extend %textImgSwap;}
+}
+
+.flechas_coalicion{
+  @include img_sprite();
+  @include flechas_coalicion();
+  background-size: contain;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  &::after{padding-bottom: 48%;}
 }
