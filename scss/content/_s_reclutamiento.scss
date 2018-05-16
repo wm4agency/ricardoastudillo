@@ -27,6 +27,6 @@ section#reclutamiento{
 
   input[type]{
     border-bottom-color: $a_green;
-    &::placeholder{color:$a_green;}
+    &::placeholder{color:$a_green_dark;}
   }
 }

@@ -41,7 +41,5 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
    </footer>
  </div>
 </body>
-<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
-<script type='text/javascript' src='js/unslider.js'></script>
-<script type='text/javascript' src='js/scripts.js'></script>
+<?php include_once "p/scripts.php"; ?>
 </html>

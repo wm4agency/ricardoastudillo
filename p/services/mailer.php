@@ -21,9 +21,11 @@ if(!isset($rnd) || !isset($cat)) {
 }
 
 // configuration
-$to = "=?UTF-8?B?".base64_encode('atención a clientes')."?=".'<no-reply@wm4.mx>';
+$to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
+
 //$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
 $recipients = "oscar@wm4.mx";
+
 $subject = "=?UTF-8?B?".base64_encode('WM4 - nuevo registro en forma de contacto')."?=";
 $email_from = $correo;
 

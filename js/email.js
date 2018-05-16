@@ -32,7 +32,7 @@ function sendRequest() {
     var data= JSON.stringify(inputs);
 
     try{
-        http.open('POST',  'php/services/mailer.php');
+        http.open('POST',  'p/services/mailer.php');
         http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         http.onreadystatechange = handleResponse;
         http.send('inputs='+data);
