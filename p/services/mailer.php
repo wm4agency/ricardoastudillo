@@ -27,12 +27,12 @@ $to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoas
 $recipients = "oscar@wm4.mx";
 
 $subject = "=?UTF-8?B?".base64_encode('WM4 - nuevo registro en forma de contacto')."?=";
-$email_from = $correo;
+//$email_from = $correo;
 
 // Always set content-type when sending HTML email
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-$headers .= 'From: wm4.mx<no-reply@wm4.mx>'. "\r\n";
+$headers .= 'From: ricardoastudillo.info<no-reply@ricardoastudillo.info>'. "\r\n";
 $headers .= 'BCC: '.$recipients.' '. "\r\n";
 
 //plantilla de correo de acuerdo al tipo de forma registrado
@@ -40,23 +40,25 @@ switch($cat){
     case "buzon":
         require_once ("../mailings/mail_inbound.php");
         if (mail($to,$subject,$message,$headers)){
-
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';
             $subject = "Gracias por su contacto";
-            require_once ("../mailings/mail_onboarding.php");
+            require_once ("../mailings/mail_thankyou_buzon.php");
 
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-            $headers .= 'From: wm4.mx<contacto@wm4.mx>'. "\r\n";
+            $headers .= 'From: ricardoastudillo.info<contacto@ricardoastudillo.info>'. "\r\n";
             //$headers .= 'to: '.$to.' '. "\r\n";
 
             if (mail($to,$subject,$message,$headers)){
-                echo "Gracias, su solicitud ha sido enviada";
-            }else{echo "error de envío de bienvenida";}
+                echo "<h3>Gracias, su solicitud ha sido enviada</h3>";
+            }else{echo "<div class='error_message'>error de envío de bienvenida</div>";}
         }
         else{
-            echo "hemos tenido algún problema con tu envío, por favor intenta nuevamente"."<br />\r\n";
-            echo " | PARAMETERS INTENDED: to= ".$to." <br />\r\n/ subject= ".$subject." <br />\r\n/ email_mesagge= ".$email_message." <br />\r\n/ headers= ".$headers;
+            echo "<div class='error_message'>Hemos tenido algún problema con tu envío, por favor intenta nuevamente"."</div>\r\n";
+            /*echo "to: ".$to."\r\n";
+            echo "subject: ".$subject."\r\n";
+            echo "message: ".$message."\r\n";
+            echo "headers: ".$headers."\r\n";*/
             die();
         }
         break;
@@ -65,21 +67,21 @@ switch($cat){
         if (mail($to,$subject,$message,$headers)){
 
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';
+            $from = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
             $subject = "Gracias por su contacto";
             require_once ("../mailings/mail_onboarding.php");
 
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-            $headers .= 'From: wm4.mx<contacto@wm4.mx>'. "\r\n";
+            $headers .= 'From: '.$from.''. "\r\n";
             //$headers .= 'to: '.$to.' '. "\r\n";
 
             if (mail($to,$subject,$message,$headers)){
-                echo "Gracias, su solicitud ha sido enviada";
-            }else{echo "error de envío de bienvenida";}
+                echo "<h3>Gracias, su solicitud ha sido enviada</h3>";
+            }else{echo "<div class='error_message'>error de envío de bienvenida</div>";}
         }
         else{
-            echo "hemos tenido algún problema con tu envío, por favor intenta nuevamente"."<br />\r\n";
-            echo " | PARAMETERS INTENDED: to= ".$to." <br />\r\n/ subject= ".$subject." <br />\r\n/ email_mesagge= ".$email_message." <br />\r\n/ headers= ".$headers;
+            echo "<div class='error_message'>Hemos tenido algún problema con tu envío, por favor intenta nuevamente"."</div>\r\n";
             die();
         }
         break;

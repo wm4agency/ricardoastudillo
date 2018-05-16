@@ -246,6 +246,8 @@ select {
   &::placeholder{
     text-transform: uppercase;
   }
+
+  option.placeholder{text-transform: uppercase;}
 }
 
 textarea{  border: 1px solid #D1D1D1;

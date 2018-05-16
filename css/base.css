@@ -734,6 +734,16 @@ select {
   textarea::placeholder,
   select::placeholder {
     text-transform: uppercase; }
+  input[type="email"] option.placeholder,
+  input[type="number"] option.placeholder,
+  input[type="search"] option.placeholder,
+  input[type="text"] option.placeholder,
+  input[type="tel"] option.placeholder,
+  input[type="url"] option.placeholder,
+  input[type="password"] option.placeholder,
+  textarea option.placeholder,
+  select option.placeholder {
+    text-transform: uppercase; }
 
 textarea {
   border: 1px solid #D1D1D1; }
@@ -1369,6 +1379,9 @@ form label.err {
   font-weight: 300;
   font-size: .95em; }
 
+form .error_message {
+  color: #f7931e; }
+
 .astudillo h1, .astudillo h2, .astudillo h3, .corregidora h1, .corregidora h2, .corregidora h3, .corregidora h4, .pri h5, .verde h5 {
   position: absolute;
   left: -300%;
@@ -1995,16 +2008,34 @@ section#reclutamiento legend {
   section#reclutamiento legend p {
     font-size: .95em; }
 
-section#reclutamiento input[type] {
+section#reclutamiento input[type], section#reclutamiento select {
   border-bottom-color: #c4e86b; }
-  section#reclutamiento input[type]::-webkit-input-placeholder {
+  section#reclutamiento input[type]::-webkit-input-placeholder, section#reclutamiento select::-webkit-input-placeholder {
     color: #799900; }
-  section#reclutamiento input[type]:-ms-input-placeholder {
+  section#reclutamiento input[type]:-ms-input-placeholder, section#reclutamiento select:-ms-input-placeholder {
     color: #799900; }
-  section#reclutamiento input[type]::-ms-input-placeholder {
+  section#reclutamiento input[type]::-ms-input-placeholder, section#reclutamiento select::-ms-input-placeholder {
     color: #799900; }
-  section#reclutamiento input[type]::placeholder {
+  section#reclutamiento input[type]::placeholder, section#reclutamiento select::placeholder {
     color: #799900; }
+
+section#reclutamiento input#edad {
+  width: 30%;
+  margin-right: 0; }
+  section#reclutamiento input#edad + span {
+    height: 38px;
+    padding: 11px 0;
+    text-transform: uppercase;
+    color: #799900;
+    border-bottom: 1px solid #c4e86b; }
+    section#reclutamiento input#edad + span + label {
+      font-size: .75em;
+      margin: -15px 0 15px 0;
+      color: #799900; }
+
+section#reclutamiento select, section#reclutamiento option.placeholder {
+  color: #799900;
+  text-transform: uppercase; }
 
 footer {
   background-color: #3e3e3e; }

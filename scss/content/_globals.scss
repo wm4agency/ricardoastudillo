@@ -53,6 +53,8 @@ input[type].required::placeholder{
 
 form label.err{color: $warning_orange; font-weight: 300; font-size: .95em;}
 
+form .error_message{color: $warning_orange;}
+
 %textImgSwap{
   position: absolute;
   left: -300%;

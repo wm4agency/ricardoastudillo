@@ -1,4 +1,6 @@
 <?php
+    //echo "mail_inbound data retrieved from template";
+
     $email_message_headers="<HTML>
     <head>
     <style>
