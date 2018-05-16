@@ -1958,7 +1958,7 @@ section#buzon {
   section#buzon input::placeholder, section#buzon textarea::placeholder {
     color: #D1D1D1;
     font-size: 1.5rem; }
-  section#buzon input[type] {
+  section#buzon input[type], section#buzon textarea {
     color: #c4e86b; }
 
 section#reclutamiento figure.ribbon {

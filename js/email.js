@@ -58,42 +58,47 @@ function checkvals(givenForm){
             case "textarea":
                 if (e.value == "" && $(e).hasClass('required')){
                    var hasClass=$("label[for='"+e.id+"']").hasClass("err");
-                                 if(!hasClass){
-                                     switch (e.name){
-                                         case "nombre":
-                                             $(e).before("<label for='nombre' generated='true' class='err' >Por favor escriba su nombre</label>");
-                                             break;
-                                         case "empresa":
-                                             $(e).before("<label for='empresa' generated='true' class='err'>Por favor escriba la empresa o dependencia a a la que pertenece</label>");
-                                             break;
-                                         case "ciudad":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor escriba la ciudad desde la que nos contacta</label>");
-                                             break;
-                                         case "correo":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un correo de contacto</label>");
-                                             break;
-                                         case "telefono":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un número telefónico de contacto</label>");
-                                             break;
-                                         case "seleccion":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor seleccione el servicio de su interés</label>");
-                                             break;
-                                         case "intencion":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor defina el motivo de su contacto</label>");
-                                             break;
-                                         case "grado":
-                                             $(e).before("<label for='ciudad' generated='true' class='err'>Por favor seleccione una opción</label>");
-                                             break;
-                                        }
-                                 }
-                                 //            return false;
-                                 errors++;
+                   if(!hasClass){
+                       switch (e.name){
+                           case "nombre":
+                               $(e).before("<label for='nombre' generated='true' class='err' >Por favor escriba su nombre</label>");
+                               break;
+                           case "empresa":
+                               $(e).before("<label for='empresa' generated='true' class='err'>Por favor escriba la empresa o dependencia a a la que pertenece</label>");
+                               break;
+                           case "ciudad":
+                               $(e).before("<label for='ciudad' generated='true' class='err'>Por favor escriba la ciudad desde la que nos contacta</label>");
+                               break;
+                           case "correo":
+                               $(e).before("<label for='correo' generated='true' class='err'>Por favor ingrese un correo de contacto</label>");
+                               break;
+                           case "telefono":
+                               $(e).before("<label for='telefono' generated='true' class='err'>Por favor ingrese un número telefónico de contacto</label>");
+                               break;
+                           case "seleccion":
+                               $(e).before("<label for='seleccion' generated='true' class='err'>Por favor seleccione el servicio de su interés</label>");
+                               break;
+                           case "intencion":
+                               $(e).before("<label for='intencion' generated='true' class='err'>Por favor defina el motivo de su contacto</label>");
+                               break;
+                           case "grado":
+                               $(e).before("<label for='grado' generated='true' class='err'>Por favor seleccione una opción</label>");
+                               break;
+                           default:
+                               $(e).before("<label for='"+e.name+"' generated='true' class='err'>Por favor ingrese un valor</label>");
+                               break;
+                          }
+                       }
+                       //return false;
+                       errors++;
                }
                else{
+                 var hasClass=$("label[for='"+e.id+"']").hasClass("err");
+                 if(!hasClass){
                    switch(e.name){
                        case "correo":
                            if(validate_email($(e).val())==false){
-                               $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un correo válido</label>");
+                               $(e).before("<label for='correo' generated='true' class='err'>Por favor ingrese un correo válido</label>");
                                errors++;
                            }else{
                                $("label[for='"+e.id+"'].err").remove();
@@ -102,7 +107,7 @@ function checkvals(givenForm){
                            break;
                        case "telefono":
                            if(validate_phone($(e).val())==false){
-                               $(e).before("<label for='ciudad' generated='true' class='err'>Por favor ingrese un teléfono válido</label>");
+                               $(e).before("<label for='telefono' generated='true' class='err'>Por favor ingrese un teléfono válido</label>");
                                errors++;
                            }else{
                                $("label[for='"+e.id+"'].err").remove();
@@ -110,11 +115,39 @@ function checkvals(givenForm){
                            }
                            break;
                        default:
-                           $("label[for='"+e.id+"'].err").remove();
                            if(!e.value || e.value=="" || e.value==null || e.value<=0)break;
+                           $("label[for='"+e.id+"'].err").remove();
                            inputs[e.name]=e.value;
                            break;
                     }
+                  }
+                  else{
+                    switch (e.name) {
+                      case "correo":
+                        if(validate_email($(e).val())==false){
+                            $("label[for='"+e.id+"']").html("Por favor ingrese un correo válido");
+                            errors++;
+                        }else{
+                            $("label[for='"+e.id+"'].err").remove();
+                            inputs[e.name]=e.value;
+                        }
+                        break;
+                      case "telefono":
+                        if(validate_email($(e).val())==false){
+                            $("label[for='"+e.id+"']").html("Por favor ingrese un teléfono válido");
+                            errors++;
+                        }else{
+                            $("label[for='"+e.id+"'].err").remove();
+                            inputs[e.name]=e.value;
+                        }
+                        break;
+                        default:
+                            if(!e.value || e.value=="" || e.value==null || e.value<=0)break;
+                            $("label[for='"+e.id+"'].err").remove();
+                            inputs[e.name]=e.value;
+                            break;
+                    }
+                  }
                }
             break;
             case "hidden":
@@ -142,15 +175,15 @@ function validate_email(address) {
 function validate_phone(phone){
     /*var phoneNum = phone.replace(/[^\d]/g, '');
     if(phoneNum.length > 6 && phoneNum.length < 11) {  return true;  } else {return false;}*/
-    var reg = /^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$/;
-    if(reg.test(phone) == false) {
+    /*var reg = /^\+((?:9[679]|8[035789]|6[789]|5[90]|42|3[578]|2[1-689])|9[0-58]|8[1246]|6[0-6]|5[1-8]|4[013-9]|3[0-469]|2[70]|7|1)(?:\W*\d){0,13}\d$/;
+    if(reg.test(phone) == false) {*/
         //return false;
         if(phone.length > 6 && phone.length < 11) {  return true;  }
         else
         return false;
-    }
+    /*}
     else
-    return true;
+    return true;*/
 }
 
 function handleResponse() {
