@@ -23,7 +23,7 @@ aside#slidding_menu, div#panel{
 
 aside#slidding_menu{
     background-color: $a_grey;
-    @include astudilloAbst($action-color);
+    //@include astudilloAbst($action-color);
     background-size: 200%;
     position: fixed;
     height: 100%;

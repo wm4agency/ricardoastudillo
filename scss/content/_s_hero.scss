@@ -1,53 +1,124 @@
 header#hero{
     height: 100%;
     height: 100vh;
-    background-color: $a_grey_shade ;
-    background: url(../images/Ricardo_Astudillo_Suarez-mv.jpg) no-repeat center center fixed;
+    background-color: $a_warm_grey ;
+    background-image:linear-gradient(to bottom right, $a_warm_grey, $w) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 
+    @media (min-width: $large){
+      height: 70%;
+      height: 70vh;
+    }
+
+    .container{
+      height: 100%;
+      height: 100vh;
+      width: 90%;
+
+      @media (min-width: $large){
+        height: 70%;
+        height: 70vh;
+      }
+
+    }
+
+    .ricardo{
+      height: 100%;
+      height: 100vh;
+      width: 100%;
+      width: 100vw;
+      background-image:  url(../images/RicardoAstudillo_frontal.png);
+      background-repeat: no-repeat;
+      background-position: bottom left calc(100% + 150px);
+      background-size: auto 90%;
+      background-attachment: fixed;
+      position: absolute;
+      margin: 0;
+      z-index: 10;
+
+      @include fadeInRight();
+      @media (min-height: 730px){
+        background-position: bottom left calc(100% + 200px);
+      }
+
+      @media (min-width: $large){
+        height: 70%;
+        height: 70vh;
+        background-size: auto 60vh;
+        background-position: bottom 150px right 47%;
+        background-image:  url(../images/RicardoAstudillo_Brazos-abiertos.png);
+      }
+    }
+
     .astudillo{
       @include astudillo();
-      width: 100%;
+      width: 90%;
       right: auto;
       left: auto;
       position: absolute;
-      top: 30px;
+      top: 20px;
+      @include fadeInLeft();
+
+      @media (min-height: 730px){
+        width: 90%;
+        top: 20px;
+      }
+
+      @media (min-width: $large){
+        width: 35%;
+        height: auto;
+        margin: 0 auto;
+        top:auto;
+        bottom: 20px;
+        transform: none;
+      }
     }
 
     .logos{
-      width: 50%;
+      width: 70%;
       left: 0;
       position: absolute;
-      top: 400px;
-      top: 60vh;
+      bottom: 0;
+      height: 60%;
+      height: 60vh;
+
+      @media (min-width: $large){
+        width: 100%;
+      }
     }
 
     .corregidora{
       width: 100%;
-      display: block
+      display: block;
+      @include fadeIn();
+
+      @media (min-width: $large){
+        width: 50%;
+        margin: 0 auto;
+      }
+
     }
 
     div.coalicion{
-      width: 50%;
+      width: 70%;
       display: block;
-      margin: 0 auto;;
-      &>figure{
+      margin: 0 auto;
+      bottom: 25px;
+      position: absolute;
+      z-index: 11;
+      @include fadeInLeft();
+
+      &.partidoswrapp>figure{
         width: 47.5%;
         float: left;
         &:first-child{margin-right: 5%}
       }
-    }
-    @media (min-width:$large){
-      background: url(../images/Ricardo_Astudillo-back-dkp.jpg) no-repeat center center fixed;
-      background-size: cover;
 
-      .astudillo{
-        width: 50%;
-        height: auto;
-        margin: 0 auto;
-        top:50%;
-        transform: translateY(50%);
+      @media (min-width: $large ){
+        width: 15%;
+        right: 0;
+        bottom: 30px;
       }
     }
   }

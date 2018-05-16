@@ -1,7 +1,10 @@
 section#buzon{
   background-color: $a_grey;
   color: $dark;
-  form{margin: 25px 0;}
+  form{
+    margin: 25px 0;
+    @media (min-width: $large){ padding: 2em 6em;}
+  }
 
   legend{
     width: 100%;

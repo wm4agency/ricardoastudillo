@@ -8,6 +8,7 @@ $a_red_dark:#b21e28;
 $a_fiuscia : #b90066;
 $a_teal : #00a49a;
 $a_grey_original : #8c9086;
+$a_warm_grey:#e4e5e5;
 $a_grey : #646569;
 $a_grey_shade: #8a8c8c;
 $a_grey_shade_light: #b3b2b1;
@@ -15,6 +16,10 @@ $action-color: #9ab006;
 $dark : #3e3e3e;
 $w: #fefefe;
 $silver: #D1D1D1;
+
+@media (min-width: 960px){
+  .foo{};
+}
 
 @font-face {
     font-family: 'Gotham';
@@ -65,6 +70,10 @@ $gotham:"Gotham","Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
     display: block;
     position: relative;
   }
+}
+
+@mixin arrow($color:#000){
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle type='text/css'%3E .arrow%7Bfill:#{url-friendly-colour($color)};%7D%0A%3C/style%3E%3Cpath class='arrow' d='M121.7 66.6c0-4 1.8-7.5 4.4-10.1l22-22c2.6-2.6 6.6-4.4 10.1-4.4 3.5 0 7.5 1.8 10.1 4.4l205.5 205.5c2.6 2.6 4.4 6.6 4.4 10.1s-1.8 7.5-4.4 10.1L168.4 465.6c-2.6 2.6-6.6 4.4-10.1 4.4 -3.5 0-7.5-1.8-10.1-4.4l-22-22c-2.6-2.6-4.4-6.6-4.4-10.1 0-3.5 1.8-7.5 4.4-10.1L299.4 250 126.1 76.7C123.5 74.1 121.7 70.1 121.7 66.6z'/%3E%3C/svg%3E");
 }
 
 @mixin box-shadow($top:1px, $left:2px, $blur:2px, $color:rgba(0, 0, 0, 0.25), $inset:"") {

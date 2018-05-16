@@ -1,6 +1,7 @@
 $(document).ready(function($){
   mediaQueryBind();
   delegateEvents();
+  //unsliderInit();
 });
 
 function mediaQueryBind() {

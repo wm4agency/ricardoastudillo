@@ -26,7 +26,6 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
      </div>
    </section>
    <section id="reclutamiento">
-     <figure class="ribbon"></figure>
      <div class="container">
        <?php include_once "p/components/forma_registro.php"; ?>
        <figure class="corregidora">
@@ -43,5 +42,6 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
  </div>
 </body>
 <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+<script type='text/javascript' src='js/unslider.js'></script>
 <script type='text/javascript' src='js/scripts.js'></script>
 </html>

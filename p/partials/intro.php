@@ -1,4 +1,4 @@
-<figure class="ribbon"></figure>
+<!-- <figure class="ribbon"></figure> -->
 <main>
   <div class="container">
     <p>
@@ -8,6 +8,6 @@
 </main>
 <blockquote>
   <div class="container">
-    <p>"Un corregidora unido,<br /> con mejores servicios,<br /> mucho mas fuerte<br /> y mejor para todos"</p>
+    <p>"Un corregidora seguro,<br /> lleno de oportunidades,<br /> para disfrutar y prosperar<br /> todos juntos con equidad"</p>
   </div>
 </blockquote>

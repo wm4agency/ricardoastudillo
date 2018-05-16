@@ -1,4 +1,5 @@
 <div class="container">
+  <figure class="ricardo"></figure>
   <figure class="corregidora">
     <hgroup>
       <h3>Corregidora</h3>

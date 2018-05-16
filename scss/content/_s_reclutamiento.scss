@@ -5,7 +5,10 @@ section#reclutamiento{
     bottom:0;
   }
 
-  form{margin: 25px 0;width: 78%;}
+  form{
+    margin: 25px 0;
+    @media (min-width: $large){ padding: 2em 6em;}
+  }
   legend{
     overflow: hidden;
     .fa,.svg-inline--fa{

@@ -6,22 +6,42 @@ section#intro{
     bottom:0;
   }
 
-  main p{
-    width: 80%;
-    font-size: .95em;
-    font-weight: 300;
-    line-height: 2em;
+  main{
+    p{
+      //width: 80%;
+      font-size: .95em;
+      font-weight: 300;
+      line-height: 2em;
+      text-align: justify;
+      padding: 0 1em;
+    }
+    @media (min-width: $large){padding: 4em;}
   }
 
   blockquote{
     width: 100%;
-    background-color: $a_green;
+    background: $a_green no-repeat center center fixed;
+    background-image: linear-gradient(transparentize($a_green_dark,.5),transparentize($a_green_dark,.5)),  url(../images/flickr-qro-lavanda.jpg);background-size: cover;
     font-size: 1.125em;
     color: $w;
     padding: .5em;
     margin: 0;
     text-transform: uppercase;
+    text-align: center;
+    height: 50%;
+    height: 50vh;
+    position: relative;
 
-    p{margin: 25px 0;}
+    .container{  position: absolute;
+    //  margin: 0 auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-weight: 700;
+      font-size: 1.25em;}
+
+    p{
+
     }
+  }
 }
