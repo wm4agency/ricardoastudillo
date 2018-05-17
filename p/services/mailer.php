@@ -1,10 +1,10 @@
 <?php
 
 // ++++++++++++++++++++++++++++++++++++
-error_reporting(0);
+//error_reporting(0);
 
-//ini_set('display_errors', 1);
-//error_reporting(E_ALL);
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 
 // retrieving input data from http header and parsing as user defined variables
@@ -19,6 +19,9 @@ if(!isset($rnd) || !isset($cat)) {
     echo $error_message;
     die();
 }
+
+date_default_timezone_set('America/Mexico_City');
+$date = date('l, M d, Y / h:i:s a', time());
 
 // configuration
 $to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
@@ -38,7 +41,7 @@ $headers .= 'BCC: '.$recipients.' '. "\r\n";
 //plantilla de correo de acuerdo al tipo de forma registrado
 switch($cat){
     case "buzon":
-        require_once ("../mailings/mail_inbound.php");
+        require_once ("../mailings/mail_inbound_buzon.php");
         if (mail($to,$subject,$message,$headers)){
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';
             $subject = "Gracias por su contacto";
@@ -63,7 +66,7 @@ switch($cat){
         }
         break;
     case "registro":
-        require_once ("../mailings/mail_inbound.php");
+        require_once ("../mailings/mail_inbound_registro.php");
         if (mail($to,$subject,$message,$headers)){
 
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';

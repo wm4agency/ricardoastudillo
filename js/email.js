@@ -134,10 +134,6 @@ function checkvals(givenForm){
     }
 
     function outputErrorLabel(e,hasClass,label){
-      console.log(e);
-      console.log(hasClass);
-      console.log(name);
-      console.log(label);
       if(hasClass==false){
         $(e).before("<label for="+e.id+" generated='true' class='err' >"+label+"</label>");
       }
