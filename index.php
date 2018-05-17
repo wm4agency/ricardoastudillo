@@ -17,13 +17,34 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
    <section id="intro">
      <?php include_once "p/partials/intro.php"; ?>
    </section>
-   <section id="comunidades">
-     <?php include_once "p/partials/comunidades.php";?>
+   <section id="metropol">
+     <?php include_once 'p/partials/metropol.php' ?>
+   </section>
+   <section id="movilidad">
+     <?php include_once 'p/partials/movilidad.php' ?>
+   </section>
+   <section id="cintillo_posible">
+       <?php include_once 'p/partials/cintillo-posible.php' ?>
+   </section>
+   <section id="grande">
+     <?php include_once 'p/partials/grande.php' ?>
+   </section>
+   <section id="futuro">
+     <?php include_once 'p/partials/futuro.php' ?>
+   </section>
+   <section id="verde">
+     <?php include_once 'p/partials/verde.php' ?>
+   </section>
+   <section id="medible">
+     <?php include_once 'p/partials/medible.php' ?>
    </section>
    <section id="buzon">
      <div class="container">
        <?php include_once "p/components/forma_buzon.php"; ?>
      </div>
+   </section>
+   <section id="comunidades">
+     <?php include_once "p/partials/comunidades.php";?>
    </section>
    <section id="reclutamiento">
      <div class="container">
@@ -37,7 +58,7 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
      </div>
    </section>
    <footer>
-     <?php include_once "p/partials/foot.php"; ?>
+     <?php include_once 'p/partials/foot.php'; ?>
    </footer>
  </div>
 </body>
