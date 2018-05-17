@@ -36,11 +36,11 @@ function curl_helper($url) {
 
 // Facebook Page: take the last post from here.
 
-$page_ID = '245853432526391';
+$page_ID = '1598653583496620';
 
 // Hardcode the App Acces token obtained in point 3. (Server Side Please.)
 
-$access_token = '1424598507563593|8WoecKTk5nb-GVBn-faCx1WMQoQ';
+$access_token = '167165777296908|0_gajIP189C4Zz9TrIt80oywol8';
 
 $posts = curl_helper('https://graph.facebook.com/'.$page_ID.'/posts?access_token='.$access_token);
 
