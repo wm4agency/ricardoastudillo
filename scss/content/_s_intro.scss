@@ -20,16 +20,12 @@ section#intro{
 
   blockquote{
     width: 100%;
-    background: $a_green no-repeat center center fixed;
-    background-image: linear-gradient(transparentize($a_green_dark,.5),transparentize($a_green_dark,.5)),  url(../images/flickr-qro-lavanda.jpg);background-size: cover;
-    font-size: 1.125em;
-    color: $w;
+    background: $a_green_dark no-repeat center center fixed;
+    background-image: linear-gradient(to bottom,transparentize($a_green_dark,.15),transparentize($a_green_dark,.95)),  url(../images/flickr-qro-lavanda.jpg);background-size: cover;
     padding: .5em;
     margin: 0;
-    text-transform: uppercase;
-    text-align: center;
-    height: 50%;
-    height: 50vh;
+    height: 70%;
+    height: 70vh;
     position: relative;
 
     .container{  position: absolute;
@@ -41,7 +37,22 @@ section#intro{
       font-size: 1.25em;}
 
     p{
+      color: $w;
+      font-size: .85em;
+      text-align: center;
+      font-weight: 100;
+      line-height: 1.25em;
+    }
+    footer{ background: none;text-align: right;padding-right: 6em;}
+    cite{font-size: .95em;color: $darkest;font-weight: 400;font-style: normal;}
 
+    @media (min-width: $large){
+      height: 50%;
+      height: 50vh;
+
+      p{font-size: 1.125em;}
+
+      cite{font-size: 1.5em;}
     }
   }
 }

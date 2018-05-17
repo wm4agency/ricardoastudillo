@@ -1809,20 +1809,16 @@ section#intro {
       padding: 4em; } }
   section#intro blockquote {
     width: 100%;
-    background: #c4e86b no-repeat center center fixed;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 153, 0, 0.5)), to(rgba(121, 153, 0, 0.5))), url(../images/flickr-qro-lavanda.jpg);
-    background-image: -webkit-linear-gradient(rgba(121, 153, 0, 0.5), rgba(121, 153, 0, 0.5)), url(../images/flickr-qro-lavanda.jpg);
-    background-image: -o-linear-gradient(rgba(121, 153, 0, 0.5), rgba(121, 153, 0, 0.5)), url(../images/flickr-qro-lavanda.jpg);
-    background-image: linear-gradient(rgba(121, 153, 0, 0.5), rgba(121, 153, 0, 0.5)), url(../images/flickr-qro-lavanda.jpg);
+    background: #799900 no-repeat center center fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 153, 0, 0.85)), to(rgba(121, 153, 0, 0.05))), url(../images/flickr-qro-lavanda.jpg);
+    background-image: -webkit-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
+    background-image: -o-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
+    background-image: linear-gradient(to bottom, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
     background-size: cover;
-    font-size: 1.125em;
-    color: #fefefe;
     padding: .5em;
     margin: 0;
-    text-transform: uppercase;
-    text-align: center;
-    height: 50%;
-    height: 50vh;
+    height: 70%;
+    height: 70vh;
     position: relative; }
     section#intro blockquote .container {
       position: absolute;
@@ -1833,6 +1829,29 @@ section#intro {
       transform: translate(-50%, -50%);
       font-weight: 700;
       font-size: 1.25em; }
+    section#intro blockquote p {
+      color: #fefefe;
+      font-size: .85em;
+      text-align: center;
+      font-weight: 100;
+      line-height: 1.25em; }
+    section#intro blockquote footer {
+      background: none;
+      text-align: right;
+      padding-right: 6em; }
+    section#intro blockquote cite {
+      font-size: .95em;
+      color: #2e2a25;
+      font-weight: 400;
+      font-style: normal; }
+    @media (min-width: 960px) {
+      section#intro blockquote {
+        height: 50%;
+        height: 50vh; }
+        section#intro blockquote p {
+          font-size: 1.125em; }
+        section#intro blockquote cite {
+          font-size: 1.5em; } }
 
 section#comunidades {
   background-color: #8a8c8c;
@@ -1926,11 +1945,12 @@ section#comunidades {
       color: #fefefe; }
   section#comunidades h3 {
     text-align: center;
-    font-size: 1.15em;
+    font-size: 2.5em;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: .025em;
-    margin: 25px auto; }
+    margin: 25px auto;
+    color: #fefefe; }
 
 section#buzon {
   background-color: #646569;
