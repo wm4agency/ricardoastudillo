@@ -2035,7 +2035,8 @@ section#metropol {
   color: #e4e5e5; }
   section#metropol #metropol_infograph figure {
     margin: 0%;
-    padding: 0; }
+    padding: 0;
+    width: 50%; }
 
 section#movilidad {
   overflow: hidden;
