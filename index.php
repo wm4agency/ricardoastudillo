@@ -1,5 +1,10 @@
 <?php
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 if (! include_once "p/partials/head.php"){echo "no head found";die();}
+if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";}
  ?>
 
 <aside id="slidding_menu">

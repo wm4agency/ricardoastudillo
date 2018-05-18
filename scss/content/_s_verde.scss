@@ -1,0 +1,27 @@
+section#verde{
+  background-color: $a_green;
+  color:$darkest;
+
+  li{
+    font-size: 1.5em;
+    line-height: 1.125em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+
+    &::before{
+      width: 3em;
+      padding-bottom: 3em;
+      margin: 0 auto 0 -3em    }
+  }
+
+  h1{color: $w;}
+
+  @media (min-width: $large){
+    h1{margin-left: -50%;}
+    .container{
+      padding: 2em 6em;
+      width: 70%;
+      margin:0 0 0 auto;
+    }
+  }
+}

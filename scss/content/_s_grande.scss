@@ -1,0 +1,26 @@
+section#grande{
+  color: $w;
+  background-color: $a_grey;
+  .container{padding-top: 2em;padding-bottom: 2em;}
+  h1{color:$a_green;strong{color:$w;text-transform: uppercase;}}
+
+  li{
+    list-style: none;
+    padding-left: .5em;
+    border-left: 3px solid $a_green;
+    line-height: 1.15em;
+    margin-bottom: 1.5em;
+
+    strong{font-weight: 300;}
+  }
+
+  @media (min-width: $large){
+    .container{  padding: 2em 6em;}
+    li{
+      width: 40%;
+      margin: 0 1.5% 1.5em 1%;
+      display: inline-block;
+      line-height: 1.95rem;
+    }
+  }
+}

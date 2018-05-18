@@ -1,0 +1,23 @@
+section#futuro{
+  background-color: $darkest;
+  color:$w;
+
+  strong{color:$a_green;}
+  h1{
+    text-align: center;
+    font-size: 3rem;
+    line-height: 5rem;
+    strong{font-size: 7rem;text-transform: uppercase;}
+  }
+  p{font-size: 1.25em;}
+
+  .container{
+    margin:0 auto;
+
+    @media (min-width: $large){
+      padding: 2em 6em;
+      width: 50%;
+    }
+  }
+
+}

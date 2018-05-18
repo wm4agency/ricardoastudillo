@@ -1,0 +1,16 @@
+section#medible{
+  background-image:linear-gradient(to bottom right, $a_warm_grey, $w) no-repeat center center;
+  color:$a_grey;
+
+  .container{padding-top: 2em;padding-bottom: 2em;}
+
+  h1 strong{color: $a_green;}
+  li{
+    @include i_check();
+    font-weight: 300;
+    font-size: 1.5em;
+  }
+  @media (min-width: $large){
+    .container{  padding: 2em 6em;}
+  }
+}
