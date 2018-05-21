@@ -1469,6 +1469,35 @@ input[type="button"].arrow, form button[type="submit"] {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
 
+.metropol {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 1.5em;
+  color: transparent;
+  position: relative;
+  padding-left: 0; }
+  .metropol::before {
+    content: "";
+    padding-bottom: 11%;
+    width: 11%;
+    display: block;
+    position: absolute;
+    background: no-repeat center center;
+    background-size: cover;
+    margin: .25em auto 0 -1.5em; }
+  .metropol::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 212.8'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23fefefe;%7D%0A%3C/style%3E%3Cpath class='st0' d='M0.9 0h95.4c3 4 13.4 22.1 31.1 54.1l28.4 50h0.5L215.1 0h95.4l0.9 0.9v211l-0.9 0.9h-76.5l-0.9-0.9V109.7h-0.5l-58.5 103.2h-36c-2-2.1-16.3-27.1-42.8-75l-16.7-28.2v102.3l-0.9 0.9h-77L0 211.9V0.9L0.9 0z'/%3E%3Cpath class='st0' d='M318.4 0h194.9l0.9 0.9v44l-0.9 0.9h-117v27.8h108l0.9 0.9v50l-0.9 0.9h-108V161h117l0.9 0.9v50l-0.9 0.9H318.4l-0.9-0.9V0.9L318.4 0z'/%3E%3Cpath class='st0' d='M520.7 0h235.9l0.9 0.9v44l-0.9 0.9h-78.3v166.1l-0.9 0.9h-77l-0.9-0.9V45.8h-78.8l-0.9-0.9v-44L520.7 0z'/%3E%3Cpath class='st0' d='M764.1 0H950c15.6 0 28.2 6.5 37.8 19.4 4.8 6.9 7.2 17.1 7.2 30.5v39.8c0 23.8-11.1 39.6-33.3 47.7v0.5l43.7 74 -0.9 0.9h-81c-2-2.2-16.4-26.5-43.2-72.6l-0.5-0.5h-36.9l-0.9 0.9v71.3l-0.9 0.9h-77l-0.9-0.9V0.9L764.1 0zM842.4 52.7V87h69.3c8.3 0 13.4-3.1 15.3-9.3V62c0-4.8-4.7-7.9-14-9.3H842.4z'/%3E%3Cpath class='st0' d='M1070.1 0h111.6c17.3 0 33.1 7.7 47.3 23.1 7.8 10.3 11.7 19.8 11.7 28.7v107.8c0 16.4-9.3 30.9-27.9 43.5 -10.4 6.5-23.3 9.7-38.7 9.7h-96.3c-31.1 0-52.6-13.3-64.4-39.8 -1.8-6.4-2.7-12.9-2.7-19.4V58.8c0-27.5 14.9-46.3 44.6-56.5C1060.7 0.8 1065.6 0 1070.1 0zM1091.2 66.2v74.5c0 11 3.3 17.8 9.9 20.4h47.7c6.8 0 10.7-6.3 11.7-19V66.2c0-13.6-4.4-20.4-13.1-20.4h-43.2C1095.6 45.8 1091.2 52.6 1091.2 66.2z'/%3E%3Cpath class='st0' d='M1247.3 0h185.9c17.7 0 31.2 8 40.5 24.1 2.7 6.7 4.1 12.3 4.1 16.7v55.1c0 14.9-7.5 27.2-22.5 37 -8.5 4.6-17 6.9-25.7 6.9h-103.5l-0.9 0.9v71.3l-0.9 0.9h-77l-0.9-0.9V0.9L1247.3 0zM1325.7 52.7V87h69.3c8.3 0 13.4-3.1 15.3-9.3V62c0-4.8-4.7-7.9-14-9.3H1325.7z'/%3E%3Cpath class='st0' d='M1543.3 0H1655c17.3 0 33.1 7.7 47.3 23.1 7.8 10.3 11.7 19.8 11.7 28.7v107.8c0 16.4-9.3 30.9-27.9 43.5 -10.4 6.5-23.3 9.7-38.7 9.7H1551c-31.1 0-52.6-13.3-64.4-39.8 -1.8-6.4-2.7-12.9-2.7-19.4V58.8c0-27.5 14.9-46.3 44.6-56.5C1534 0.8 1538.9 0 1543.3 0zM1564.5 66.2v74.5c0 11 3.3 17.8 9.9 20.4h47.7c6.8 0 10.7-6.3 11.7-19V66.2c0-13.6-4.4-20.4-13.1-20.4h-43.2C1568.8 45.8 1564.5 52.6 1564.5 66.2z'/%3E%3Cpath class='st0' d='M1720.6 0h77l0.9 0.9V161h120.6l0.9 0.9v50l-0.9 0.9h-198.5l-0.9-0.9V0.9L1720.6 0z'/%3E%3C/svg%3E ");
+    width: 100%;
+    margin: 0;
+    background-size: 100%;
+    padding-left: 0;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -39%);
+    -ms-transform: translate(-50%, -39%);
+    transform: translate(-50%, -39%); }
+
 input[type].required::-webkit-input-placeholder {
   color: crimson; }
 
@@ -2032,11 +2061,169 @@ section#intro {
 
 section#metropol {
   background-color: #3e3e3e;
-  color: #e4e5e5; }
-  section#metropol #metropol_infograph figure {
-    margin: 0%;
+  color: #e4e5e5;
+  padding-top: 1.5em; }
+  section#metropol .container {
+    display: block;
+    width: 85vw; }
+  section#metropol h1, section#metropol h2 {
+    text-align: center;
+    font-size: 1.5em;
     padding: 0;
-    width: 50%; }
+    margin: 0; }
+  section#metropol h1 strong {
+    text-transform: uppercase; }
+  section#metropol h2 {
+    margin-bottom: 1em; }
+    section#metropol h2 strong {
+      font-size: 2.5em;
+      line-height: .5em; }
+  section#metropol #metropol_infograph {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 135%;
+    overflow: hidden; }
+    @media (min-width: 760px) and (min-height: 800px) {
+      section#metropol #metropol_infograph {
+        margin-bottom: 30%; } }
+    @media (min-width: 960px) {
+      section#metropol #metropol_infograph {
+        margin-bottom: 15%; } }
+    section#metropol #metropol_infograph figure {
+      margin: 0;
+      padding: 0;
+      width: 49.25%;
+      display: inline-block;
+      position: relative;
+      margin: 20% 0; }
+      section#metropol #metropol_infograph figure img, section#metropol #metropol_infograph figure figcaption {
+        position: absolute; }
+      section#metropol #metropol_infograph figure figcaption {
+        text-align: center;
+        line-height: 1.125em; }
+      section#metropol #metropol_infograph figure:nth-child(odd) {
+        padding-bottom: 100%; }
+        section#metropol #metropol_infograph figure:nth-child(odd) img {
+          top: 0;
+          margin-top: 50%; }
+        section#metropol #metropol_infograph figure:nth-child(odd) figcaption {
+          bottom: -17.5%; }
+      section#metropol #metropol_infograph figure:nth-child(even) {
+        padding-top: 100%; }
+        section#metropol #metropol_infograph figure:nth-child(even) img {
+          bottom: 0;
+          margin-bottom: 50%; }
+        section#metropol #metropol_infograph figure:nth-child(even) figcaption {
+          top: -17.5%; }
+      section#metropol #metropol_infograph figure.metro-respuesta figcaption {
+        bottom: -15%; }
+      section#metropol #metropol_infograph figure.metro-recon figcaption {
+        bottom: -25%; }
+      section#metropol #metropol_infograph figure.metro-drones img {
+        top: -2.5%; }
+      section#metropol #metropol_infograph figure.metro-drones figcaption {
+        top: -17.5%; }
+      @media (max-width: 350px) {
+        section#metropol #metropol_infograph figure {
+          width: 49%;
+          margin: 30% 0; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#metropol #metropol_infograph figure {
+          width: 32.8%;
+          margin: 10% 0; }
+          section#metropol #metropol_infograph figure:nth-child(odd) {
+            padding-bottom: 75%; }
+            section#metropol #metropol_infograph figure:nth-child(odd) img {
+              margin-top: 62.5%; }
+          section#metropol #metropol_infograph figure:nth-child(even) {
+            padding-top: 75%; }
+            section#metropol #metropol_infograph figure:nth-child(even) img {
+              margin-bottom: 62.5%; }
+          section#metropol #metropol_infograph figure.metro-respuesta figcaption {
+            bottom: 0; }
+          section#metropol #metropol_infograph figure.metro-c2s figcaption {
+            top: -5%; }
+          section#metropol #metropol_infograph figure.metro-recon figcaption {
+            width: 125%;
+            margin-left: -12.5%;
+            bottom: -7.5%; }
+          section#metropol #metropol_infograph figure.metro-comercioseg figcaption {
+            top: -7.5%; }
+          section#metropol #metropol_infograph figure.metro-drones img {
+            top: 0; }
+          section#metropol #metropol_infograph figure.metro-drones figcaption {
+            top: -10%; } }
+      @media (min-width: 960px) {
+        section#metropol #metropol_infograph figure {
+          width: 16%;
+          margin: 15% 0; }
+          section#metropol #metropol_infograph figure:nth-child(odd) {
+            padding-bottom: 25%; }
+            section#metropol #metropol_infograph figure:nth-child(odd) img {
+              margin-top: 25%; }
+            section#metropol #metropol_infograph figure:nth-child(odd) figcaption {
+              bottom: -55%; }
+          section#metropol #metropol_infograph figure:nth-child(even) {
+            padding-top: 25%; }
+            section#metropol #metropol_infograph figure:nth-child(even) img {
+              margin-bottom: 25%; }
+            section#metropol #metropol_infograph figure:nth-child(even) figcaption {
+              top: -35%; }
+          section#metropol #metropol_infograph figure.metro-respuesta figcaption {
+            bottom: -35%; }
+          section#metropol #metropol_infograph figure.metro-c2s figcaption {
+            top: -40%; }
+          section#metropol #metropol_infograph figure.metro-recon figcaption {
+            width: 125%;
+            margin-left: -12.5%;
+            bottom: -47.5%; }
+          section#metropol #metropol_infograph figure.metro-comercioseg figcaption {
+            top: -45%; }
+          section#metropol #metropol_infograph figure.metro-drones img {
+            top: -15%; }
+          section#metropol #metropol_infograph figure.metro-drones figcaption {
+            top: -40%; } }
+  section#metropol #metro_app {
+    width: 100%;
+    position: absolute;
+    bottom: 3em;
+    margin: 0;
+    padding: 0;
+    right: -10%; }
+    section#metropol #metro_app img {
+      width: 145%;
+      margin: 0;
+      padding: 0;
+      right: -25%;
+      position: absolute;
+      bottom: 4em; }
+    section#metropol #metro_app figcaption {
+      position: absolute;
+      bottom: 0;
+      line-height: 1em;
+      text-align: right;
+      right: 0;
+      margin: 0;
+      padding: .25em;
+      padding-right: .75em;
+      font-size: 2em;
+      font-weight: 400;
+      color: #2e2a25;
+      background-color: #c4e86b; }
+    @media (min-width: 760px) and (min-height: 800px) {
+      section#metropol #metro_app {
+        width: 50%; } }
+    @media (min-width: 960px) {
+      section#metropol #metro_app {
+        right: -7.5%;
+        width: 35%; }
+        section#metropol #metro_app img {
+          width: 100%;
+          right: -7.5%;
+          bottom: 4em; }
+        section#metropol #metro_app figcaption {
+          padding: .25em; } }
 
 section#movilidad {
   overflow: hidden;
@@ -2049,11 +2236,21 @@ section#movilidad {
   section#movilidad h1 {
     width: 90%;
     margin: 15px auto 0 auto;
-    font-size: 1.25em;
-    line-height: 1.15em; }
+    font-size: 1.5em;
+    line-height: 1.25em;
+    color: #c4e86b;
+    font-weight: 300; }
     section#movilidad h1 strong {
-      font-size: 1.75em;
-      display: block; }
+      font-size: 1.35em;
+      display: block;
+      color: #2e2a25;
+      text-transform: uppercase; }
+    @media (min-width: 960px) {
+      section#movilidad h1 {
+        float: right;
+        margin-right: 15%;
+        font-size: 2em;
+        width: auto; } }
   section#movilidad figure {
     margin: 0;
     padding: 0; }
@@ -2063,57 +2260,201 @@ section#movilidad {
       position: absolute; }
     section#movilidad #movilidad_infograph figure figcaption {
       line-height: 1.15em; }
+      @media (max-width: 350px) {
+        section#movilidad #movilidad_infograph figure figcaption {
+          font-size: .75em; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure figcaption {
+          font-size: 1.5em; } }
+      @media (min-width: 980px) and (min-height: 1300px) {
+        section#movilidad #movilidad_infograph figure figcaption {
+          font-size: 2em; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure figcaption {
+          font-size: 1.25em; } }
     section#movilidad #movilidad_infograph figure.mov-camino {
       width: 100%;
       height: 100%;
-      bottom: 0;
       left: 0; }
       section#movilidad #movilidad_infograph figure.mov-camino img {
-        bottom: 0;
+        bottom: -5%;
         left: 0;
-        height: 85%;
+        height: 100%;
         width: auto;
         left: -7%; }
+        @media (min-width: 960px) {
+          section#movilidad #movilidad_infograph figure.mov-camino img {
+            height: 175%;
+            top: 15%;
+            left: 7.5%; } }
+        @media (min-width: 760px) and (min-height: 800px) {
+          section#movilidad #movilidad_infograph figure.mov-camino img {
+            left: 0; } }
+        @media (min-width: 980px) and (min-height: 1300px) {
+          section#movilidad #movilidad_infograph figure.mov-camino img {
+            left: -5%;
+            height: 125%; } }
     section#movilidad #movilidad_infograph figure.mov-transporte {
-      bottom: 10%;
-      right: 16%;
-      width: 60%;
-      text-align: right; }
+      bottom: 1%;
+      right: 0%;
+      width: 55%; }
       section#movilidad #movilidad_infograph figure.mov-transporte img {
-        width: 60%;
-        left: -33%;
-        top: -350%; }
+        width: 70%;
+        left: -70%;
+        top: -180%; }
+      @media (max-width: 350px) {
+        section#movilidad #movilidad_infograph figure.mov-transporte {
+          bottom: 2.5%; }
+          section#movilidad #movilidad_infograph figure.mov-transporte img {
+            top: -350%; } }
+      @media (min-height: 650px) and (max-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-transporte {
+          bottom: 3%; }
+          section#movilidad #movilidad_infograph figure.mov-transporte img {
+            top: -280%; } }
+      @media (min-width: 400px) and (min-height: 650px) {
+        section#movilidad #movilidad_infograph figure.mov-transporte {
+          right: 5%; }
+          section#movilidad #movilidad_infograph figure.mov-transporte img {
+            top: -310%; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-transporte {
+          right: 20%;
+          bottom: 5%;
+          width: 50%; }
+          section#movilidad #movilidad_infograph figure.mov-transporte img {
+            top: -380%;
+            left: -55%; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-transporte {
+          bottom: 5%;
+          right: 10%;
+          width: 30%;
+          height: 3em; }
+          section#movilidad #movilidad_infograph figure.mov-transporte img {
+            width: 60%;
+            left: -70%;
+            top: -380%; }
+          section#movilidad #movilidad_infograph figure.mov-transporte figcaption {
+            text-align: right; } }
     section#movilidad #movilidad_infograph figure.mov-caminable {
       right: 2.5%;
-      bottom: 25%; }
+      bottom: 18%;
+      width: 30%; }
       section#movilidad #movilidad_infograph figure.mov-caminable img {
-        width: 90%;
+        width: 115%;
         bottom: 110%;
-        left: 10%; }
+        left: -5%; }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-caminable {
+          right: 5%;
+          bottom: 23%;
+          width: 35%; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-caminable {
+          right: 5%;
+          width: 25%; }
+          section#movilidad #movilidad_infograph figure.mov-caminable img {
+            width: 80%; } }
     section#movilidad #movilidad_infograph figure.mov-interconexión {
-      bottom: 75%;
+      bottom: 65.5%;
       width: 50%;
       right: 3%;
       text-align: right; }
       section#movilidad #movilidad_infograph figure.mov-interconexión img {
-        left: -60%;
-        bottom: -80%;
-        width: 80%; }
+        left: -45%;
+        top: 15%;
+        width: 65%; }
+      @media (min-width: 400px) and (min-height: 650px) {
+        section#movilidad #movilidad_infograph figure.mov-interconexión {
+          bottom: 71%; }
+          section#movilidad #movilidad_infograph figure.mov-interconexión img {
+            left: -35%;
+            top: 5%; } }
+      @media (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-interconexión {
+          bottom: 70.5%;
+          width: 55%;
+          right: 2.5%; }
+          section#movilidad #movilidad_infograph figure.mov-interconexión img {
+            left: -35%;
+            top: 13%; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-interconexión {
+          bottom: 76%; }
+          section#movilidad #movilidad_infograph figure.mov-interconexión img {
+            left: -37.5%;
+            top: -40%;
+            width: 50%; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-interconexión {
+          width: 25%;
+          right: 25%;
+          top: 32%;
+          height: 3em; }
+          section#movilidad #movilidad_infograph figure.mov-interconexión img {
+            width: 85%;
+            left: -75%;
+            top: -120%; } }
     section#movilidad #movilidad_infograph figure.mov-familia {
-      width: 56%;
-      left: 4%;
-      bottom: 63%; }
+      width: 45%;
+      left: 5%;
+      bottom: 52%; }
       section#movilidad #movilidad_infograph figure.mov-familia img {
-        bottom: -270%;
-        width: 55%; }
+        top: 100%;
+        width: 60%; }
+      @media (min-width: 400px) and (min-height: 650px) {
+        section#movilidad #movilidad_infograph figure.mov-familia {
+          bottom: 57%; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-familia {
+          bottom: 60%; }
+          section#movilidad #movilidad_infograph figure.mov-familia img {
+            width: 50%; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-familia {
+          bottom: 40%;
+          width: 25%;
+          height: 3em; }
+          section#movilidad #movilidad_infograph figure.mov-familia img {
+            bottom: -255%;
+            width: 50%;
+            left: 25%; } }
     section#movilidad #movilidad_infograph figure.mov-tiempo {
       width: 50%;
-      top: 10%;
-      left: 40%; }
+      top: 16%;
+      left: 30%; }
       section#movilidad #movilidad_infograph figure.mov-tiempo img {
-        width: 55%;
-        left: -73%;
+        width: 45%;
+        left: -50%;
         top: 20%; }
+      @media (max-width: 350px) {
+        section#movilidad #movilidad_infograph figure.mov-tiempo {
+          top: 19%; } }
+      @media (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-tiempo {
+          width: 60%;
+          top: 14%;
+          left: 38%; } }
+      @media (min-width: 400px) and (min-height: 650px) {
+        section#movilidad #movilidad_infograph figure.mov-tiempo {
+          top: 11.5%; } }
+      @media (min-width: 760px) and (min-height: 800px) {
+        section#movilidad #movilidad_infograph figure.mov-tiempo {
+          top: 9%;
+          left: 28%;
+          width: 50%; }
+          section#movilidad #movilidad_infograph figure.mov-tiempo img {
+            left: -48%;
+            top: -10%; } }
+      @media (min-width: 960px) {
+        section#movilidad #movilidad_infograph figure.mov-tiempo {
+          width: 25%;
+          top: 5%;
+          left: 5%; }
+          section#movilidad #movilidad_infograph figure.mov-tiempo img {
+            left: 35%;
+            top: 65%; } }
 
 section#cintillo_posible {
   background-color: #3e3e3e;

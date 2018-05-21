@@ -4,6 +4,13 @@ $small:300px;
 $medium:650px;
 $large:960px;
 $content-area-max:1280px;
+$m_w_small:350px;
+$m_w_medium:400px;
+$m_w_large:760px;
+$m_w_pro:980px;
+$h_medium:700px;
+$m_h_large:800px;
+$m_h_pro:1300px;
 
 @media (min-width:$small){
   html,body{

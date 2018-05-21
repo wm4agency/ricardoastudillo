@@ -1,17 +1,17 @@
 <div class="container">
   <figure class="ricardo"></figure>
   <figure class="corregidora">
-    <hgroup>
+    <header>
       <h3>Corregidora</h3>
       <h4>¡Posible!</h4>
-    </hgroup>
+    </header>
   </figure>
   <div class="logos">
-    <hgroup class="astudillo">
+    <div class="astudillo">
       <h1>Ricardo Astudillo</h1>
       <h2>candidato a presidente municipal</h2>
       <h3>municipio de Corregidora, Querétaro</h3>
-    </hgroup>
+    </div>
     <div class="coalicion">
       <div class="partidoswrapp">
         <figure class="pri"><h5>Partido de la Revolución Democrática</h5></figure>

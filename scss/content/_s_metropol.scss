@@ -1,12 +1,179 @@
 section#metropol{
   background-color: $dark;
   color: $a_warm_grey;
+  padding-top: 1.5em;
+  .container{display: block; width: 85vw;}
+
+h1,h2{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+  h1{
+    strong{text-transform: uppercase;}
+  }
+  h2{
+    margin-bottom: 1em;
+    strong{font-size: 2.5em;line-height: .5em;
+    }
+  }
 
   #metropol_infograph{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 135%;
+    overflow: hidden;
+
+    @media(min-width: $m_w_large) and (min-height: $m_h_large){
+      margin-bottom: 30%;
+    }
+    @media (min-width: $large){
+      margin-bottom: 15%;
+    }
+
     figure{
-      margin: 0%;
+      margin: 0;
       padding: 0;
+      width: 49.25%;
+      display: inline-block;
+      position: relative;
+      margin: 20% 0;
+
+      img,figcaption{position: absolute;}
+      figcaption{
+        text-align: center;
+        line-height: 1.125em;
+      }
+
+      &:nth-child(odd){
+        padding-bottom: 100%;
+        img{
+          top: 0;
+          margin-top: 50%;
+        }
+        figcaption{bottom: -17.5%;}
+      }
+      &:nth-child(even){
+        padding-top: 100%;
+        img{
+          bottom: 0;
+          margin-bottom: 50%;
+        }
+        figcaption{top:-17.5%;}
+      }
+
+
+      &.metro-respuesta{figcaption{bottom: -15%;}}
+      //&.metro-c2s{figcaption{top: -40%;}}
+      &.metro-recon{figcaption{bottom: -25%;}}
+      //&.metro-comercioseg{figcaption{top: -25%;}}
+      &.metro-drones{
+        img{top: -2.5%;}
+        figcaption{top: -17.5%;}
+      }
+
+      @media (max-width: $m_w_small){width:49%;margin: 30% 0;}
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){
+        width: 32.8%;
+        margin: 10% 0;
+
+        &:nth-child(odd){
+          padding-bottom: 75%;
+          img{
+            margin-top: 62.5%;
+          }
+        }
+        &:nth-child(even){
+          padding-top: 75%;
+          img{
+            margin-bottom: 62.5%;
+          }
+        }
+
+        &.metro-respuesta{figcaption{bottom: 0;}}
+        &.metro-c2s{figcaption{top: -5%;}}
+        &.metro-recon{figcaption{width: 125%; margin-left: -12.5%; bottom: -7.5%;}}
+        &.metro-comercioseg{figcaption{top: -7.5%;}}
+        &.metro-drones{img{top:0;}figcaption{top:-10%;}}
+
+      }
+      @media (min-width: $large){
+        width: 16%;
+        margin: 15% 0;
+
+        &:nth-child(odd){
+          padding-bottom: 25%;
+          img{
+            margin-top: 25%;
+          }
+          figcaption{bottom: -55%;}
+        }
+        &:nth-child(even){
+          padding-top: 25%;
+          img{
+            margin-bottom: 25%;
+          }
+          figcaption{top:-35%;}
+        }
+
+
+        &.metro-respuesta{figcaption{bottom: -35%;}}
+        &.metro-c2s{figcaption{top: -40%;}}
+        &.metro-recon{figcaption{width: 125%; margin-left: -12.5%; bottom: -47.5%;}}
+        &.metro-comercioseg{figcaption{top: -45%;}}
+        &.metro-drones{img{top:-15%;}figcaption{top: -40%;}}
+      }
+    }
+  }
+
+  #metro_app{
+    width: 100%;
+    position: absolute;
+    bottom: 3em;
+    margin: 0;
+    padding: 0;
+    right: -10%;
+
+    img{
+      width: 145%;
+      margin: 0;
+      padding: 0;
+      right: -25%;
+      position: absolute;
+      bottom: 4em;
+    }
+    figcaption{
+      position: absolute;
+      bottom: 0;
+      line-height: 1em;
+      text-align: right;
+      right: 0;
+      margin: 0;
+      padding: .25em;
+      padding-right: .75em;
+      font-size: 2em;
+      font-weight: 400;
+      color: $darkest;
+      background-color: $a_green;
+    }
+    @media(min-width: $m_w_large) and (min-height: $m_h_large){
       width: 50%;
+    }
+    @media (min-width: $large){
+      right: -7.5%;
+      width: 35%;
+
+      img{
+        width: 100%;
+        right: -7.5%;
+        bottom: 4em;
+      }
+      figcaption{
+        padding:.25em;
+      }
     }
   }
 }

@@ -7,9 +7,18 @@ section#movilidad{
   h1{
     width: 90%;
     margin: 15px auto 0 auto;
-    font-size: 1.25em;
-    line-height: 1.15em;
-    strong{font-size: 1.75em; display: block;}
+    font-size: 1.5em;
+    line-height: 1.25em;
+    color: $a_green;
+    font-weight: 300;
+
+    strong{font-size: 1.35em; display: block;color: $darkest;text-transform: uppercase;}
+    @media(min-width: $large){
+      float: right;
+      margin-right: 15%;
+      font-size: 2em;
+      width: auto;;
+    }
   }
 
   figure{margin: 0;padding: 0;}
@@ -18,72 +27,223 @@ section#movilidad{
     position: absolute;
 
     img{position: absolute;}
-    //background-color: transparentize($warning_orange,.95);
-    //border-radius: 3px;
 
-    figcaption{line-height: 1.15em;}
+    figcaption{
+      line-height: 1.15em;
+
+      @media (max-width: $m_w_small){font-size: .75em;}
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){font-size: 1.5em;}
+      @media(min-width: $m_w_pro) and (min-height: $m_h_pro){font-size: 2em;}
+      @media(min-width: $large){font-size: 1.25em;}
+    }
+
+
 
     &.mov-camino{
       width: 100%;
       height: 100%;
-      bottom: 0;
       left: 0;
       img{
-        bottom: 0;
+        bottom: -5%;
         left: 0;
-        height: 85%;
+        height: 100%;
         width: auto;
         left: -7%;
+
+        @media(min-width: $large){
+          height: 175%;
+          top: 15%;
+          left: 7.5%;
+        }
+        @media(min-width: $m_w_large) and (min-height: $m_h_large){
+          left: 0;
+        }
+        @media(min-width: $m_w_pro) and (min-height: $m_h_pro){
+          left: -5%;
+          height: 125%;
+        }
       }
     }
     &.mov-transporte {
-      bottom: 10%;
-      right: 16%;
-      width: 60%;
-      text-align: right;
+      bottom: 1%;
+      right: 0%;
+      width: 55%;
       img{
-        width: 60%;
-      left: -33%;
-      top: -350%;
+        width: 70%;
+        left: -70%;
+        top: -180%;
+      }
+
+      @media (max-width: $m_w_small){
+        bottom: 2.5%;
+        img{top: -350%;}
+      }
+      @media(min-height: $medium) and (max-width: $large){
+        bottom:3%;
+        img{top: -280%;}
+      }
+      @media(min-width: $m_w_medium)and(min-height: $medium){
+        right: 5%;
+        img{top: -310%;}
+      }
+      @media (min-width: $m_w_large)and(min-height: $m_h_large){
+        right: 20%;
+        bottom: 5%;
+        width: 50%;
+        img{
+          top: -380%;
+          left: -55%;
+        }
+      }
+      @media(min-width: $large){
+        bottom: 5%;
+        right: 10%;
+        width: 30%;
+        height: 3em;
+        img{
+          width: 60%;
+          left: -70%;
+          top: -380%;
+        }
+        figcaption{text-align: right;}
       }
     }
     &.mov-caminable {
       right: 2.5%;
-      bottom: 25%;
+      bottom: 18%;
+      width: 30%;
       img{
-        width: 90%;
+        width: 115%;
         bottom: 110%;
-        left: 10%;
+        left: -5%;
+      }
+
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){
+        right: 5%;
+        bottom: 23%;
+        width: 35%;
+      }
+      @media  (min-width: $large){
+        right: 5%;
+        width: 25%;
+
+        img{width: 80%;}
       }
     }
+
     &.mov-interconexión{
-      bottom: 75%;
+      bottom: 65.5%;
       width: 50%;
       right: 3%;
       text-align: right;
       img{
-        left: -60%;
-        bottom: -80%;
-        width: 80%;
+        left: -45%;
+        top: 15%;
+        width: 65%;
+      }
+      @media(min-width: $m_w_medium)and(min-height: $medium){
+        bottom: 71%;
+        img{
+          left: -35%;
+          top: 5%;
+        }
+      }
+      @media(min-height: $m_h_large){
+        bottom: 70.5%;
+        width: 55%;
+        right: 2.5%;
+        img{
+          left: -35%;
+          top: 13%;
+        }
+      }
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){
+        bottom: 76%;
+        img{    left: -37.5%;
+          top: -40%;
+          width: 50%;
+        }
+      }
+      @media (min-width: $large){
+        width: 25%;
+        right: 25%;
+        top: 32%;
+        height: 3em;
+
+        img{
+          width: 85%;
+          left: -75%;
+          top: -120%;
+        }
       }
     }
     &.mov-familia{
-      width: 56%;
-          left: 4%;
-          bottom: 63%;
+      width: 45%;
+      left: 5%;
+      bottom: 52%;
       img{
-        bottom: -270%;
-        width: 55%;
+        top: 100%;
+        width: 60%;
+      }
+
+      @media(min-width: $m_w_medium)and(min-height: $medium){
+        bottom: 57%;
+      }
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){
+        bottom: 60%;
+        img{
+          width: 50%;
+        }
+      }
+      @media (min-width: $large){
+        bottom: 40%;
+        width: 25%;
+        height: 3em;
+
+        img{
+          bottom: -255%;
+          width: 50%;
+          left: 25%;
+        }
       }
     }
     &.mov-tiempo{
       width: 50%;
-    top: 10%;
-    left: 40%;
+      top: 16%;
+      left: 30%;
+
       img{
-        width: 55%;
-    left: -73%;
-    top: 20%;
+        width: 45%;
+        left: -50%;
+        top: 20%;
+      }
+      @media (max-width: $m_w_small){
+        top: 19%;
+      }
+      @media(min-height: $m_h_large){
+        width: 60%;
+        top: 14%;
+        left: 38%;
+      }
+      @media(min-width: $m_w_medium)and(min-height: $medium){
+        top: 11.5%;
+      }
+      @media(min-width: $m_w_large) and (min-height: $m_h_large){
+        top: 9%;
+        left: 28%;
+        width: 50%;
+        img{left: -48%;
+        top: -10%;}
+      }
+      @media(min-width: $large){
+        width: 25%;
+        top: 5%;
+        left: 5%;
+
+        img{
+          left: 35%;
+          top: 65%;
+        }
       }
     }
   }

@@ -47,6 +47,23 @@ input[type="button"].arrow, form button[type="submit"] {
   }
 }
 
+.metropol{
+  @include img_sprite_pre(11%);
+  color:transparent;
+  position: relative;
+  padding-left: 0;
+  &::before{
+    @include metropol($w);
+    width: 100%;
+    margin: 0;
+    background-size: 100%;
+    padding-left: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-39%);
+  }
+}
+
 input[type].required::placeholder{
   color: crimson;
 }
