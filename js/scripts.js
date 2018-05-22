@@ -38,7 +38,7 @@ function delegateEvents(){
     document.addEventListener('click', function (event) {
         var e = event.target;
         //e.preventDefault
-        //console.log(e);
+        console.log(e);
 
         if (e.classList.contains( "m-nav-toggler" ) ) { // botones en formas de contacto
             e.preventDefault;
@@ -55,7 +55,7 @@ function delegateEvents(){
             e.preventDefault;
             //console.log(e);
             navegar(e);
-    }
+          }
 
     }, false);
 }
