@@ -441,7 +441,4 @@
         </table>
       </body></html>
 ';
-
-
-$email_message_footer="registro creado el ".date("d/m/Y")."\n\n"."</BODY></HTML>";
-$message =$email_message_headers.$email_message_body.$email_message_footer."\n\n";
+$message =$email_message_headers.$email_message_body."\n\n";

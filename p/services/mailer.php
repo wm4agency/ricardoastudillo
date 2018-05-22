@@ -23,24 +23,23 @@ if(!isset($rnd) || !isset($cat)) {
 date_default_timezone_set('America/Mexico_City');
 $date = date('l, M d, Y / h:i:s a', time());
 
-// configuration
-$to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
 
-//$recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
-$recipients = "oscar@wm4.mx";
-
-$subject = "=?UTF-8?B?".base64_encode('WM4 - nuevo registro en forma de contacto')."?=";
 //$email_from = $correo;
 
-// Always set content-type when sending HTML email
+//  set content-type
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
 $headers .= 'From: ricardoastudillo.info<no-reply@ricardoastudillo.info>'. "\r\n";
-$headers .= 'BCC: '.$recipients.' '. "\r\n";
 
 //plantilla de correo de acuerdo al tipo de forma registrado
 switch($cat){
     case "buzon":
+        $to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
+        $recipients = "oscar@wm4.mx,maru@wm4.mx, pepe@wm4.mx";
+        //$recipients = "oscar@wm4.mx";
+        $subject = "=?UTF-8?B?".base64_encode('Nuevo registro en Buzón Ciudadano - ricardoastudillo.info')."?=";
+        $headers .= 'BCC: '.$recipients.' '. "\r\n";
+
         require_once ("../mailings/mail_inbound_buzon.php");
         if (mail($to,$subject,$message,$headers)){
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';
@@ -49,11 +48,12 @@ switch($cat){
 
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-            $headers .= 'From: ricardoastudillo.info<contacto@ricardoastudillo.info>'. "\r\n";
-            //$headers .= 'to: '.$to.' '. "\r\n";
+            $headers .= 'From: Ricardo Astudillo<contacto@ricardoastudillo.info>'. "\r\n";
+            $headers .= 'to: '.$to.' '. "\r\n";
 
             if (mail($to,$subject,$message,$headers)){
-                echo "<h3>Gracias, su solicitud ha sido enviada</h3>";
+                echo "<h3>Gracias por tu aportación.</h3><br />
+                <p>Con tu participación lograremos el Corregidora Posible.</p>";
             }else{echo "<div class='error_message'>error de envío de bienvenida</div>";}
         }
         else{
@@ -66,25 +66,35 @@ switch($cat){
         }
         break;
     case "registro":
+        $to = "=?UTF-8?B?".base64_encode('Equipo Astudillo')."?=".'<contacto@ricardoastudillo.info>';
+        $recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
+        //$recipients = "oscar@wm4.mx";
+        $subject = "=?UTF-8?B?".base64_encode('Registro de colaborador - ricardoastudillo.info')."?=";
+        $headers .= 'BCC: '.$recipients.' '. "\r\n";
+
+
         require_once ("../mailings/mail_inbound_registro.php");
         if (mail($to,$subject,$message,$headers)){
 
             $to = "=?UTF-8?B?".base64_encode($nombre)."?=".'<'.$correo.'>';
             $from = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
-            $subject = "Gracias por su contacto";
+            $subject = "Gracias por por registrarte,";
             require_once ("../mailings/mail_onboarding.php");
 
             $headers = "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-Type: text/html; charset=UTF-8". "\r\n";
-            $headers .= 'From: '.$from.''. "\r\n";
-            //$headers .= 'to: '.$to.' '. "\r\n";
+            $headers .= 'From: Ricardo Astudillo<contacto@ricardoastudillo.info>'. "\r\n";
+            $headers .= 'to: '.$to.' '. "\r\n";
 
             if (mail($to,$subject,$message,$headers)){
-                echo "<h3>Gracias, su solicitud ha sido enviada</h3>";
+                echo "<h3>¡Bienvenido al equipo!</h3><br />
+                <p>
+                  En breve recibirás información y comunicación del equipo de campaña.
+                </p>";
             }else{echo "<div class='error_message'>error de envío de bienvenida</div>";}
         }
         else{
-            echo "<div class='error_message'>Hemos tenido algún problema con tu envío, por favor intenta nuevamente"."</div>\r\n";
+            echo "<div class='error_message'>Hemos tenido algún problema con tu registro, por favor intenta nuevamente"."</div>\r\n";
             die();
         }
         break;

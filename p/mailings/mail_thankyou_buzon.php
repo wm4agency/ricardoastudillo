@@ -232,7 +232,7 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 10px 5px 10px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"><![endif]-->
-                          <div style="color: #555555; line-height: 120%; font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif; padding: 10px;">
+                          <div style="color: #555555; line-height: 120%; font-family: "Roboto", Tahoma, Verdana, Segoe, sans-serif; padding: 10px;">
                             <div style="font-family: Roboto, Tahoma, Verdana, Segoe, sans-serif; font-size: 12px; line-height: 14px; color: #555555; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px;"><span style="font-size: 58px; line-height: 69px;"><strong>GRACIAS</strong></span></p>
                             </div>
@@ -246,8 +246,8 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 10px 5px 10px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 15px; padding-bottom: 15px;"><![endif]-->
-                          <div style="line-height: 120%; color: #555555; font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif; padding: 15px 0px 15px 0px;">
-                            <div style="font-size: 12px; line-height: 14px; font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif; color: #555555; text-align: left;">
+                          <div style="line-height: 120%; color: #555555; font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; padding: 15px 0px 15px 0px;">
+                            <div style="font-size: 12px; line-height: 14px; font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; color: #555555; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: right;"></p>
                             </div>
                           </div>
@@ -292,9 +292,11 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 30px;"><![endif]-->
-                          <div style="line-height: 150%; color: #71777d; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 10px 10px 30px 10px;">
+                          <div style="line-height: 150%; color: #71777d; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 10px 10px 30px 10px;">
                             <div style="font-size: 12px; line-height: 18px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #71777d; text-align: left;">
-                              <p style="margin: 0; font-size: 14px; line-height: 21px;">'.$nombre.' gracias por tu aportación, habremos de considerarla para incluirla en la agenda de trabajo que hemos trazado para nuestra gestión. Tu problemática y las necesidades de todo Corregidora son una prioridad para mí, y deben atenderse con oportunidad y buen gobierno, y mi administración velará porque así se realice.</p>
+                              <p style="margin: 0; font-size: 14px; line-height: 21px;">Tu aportación es muy valiosa para Corregidora, '.$nombre.'. Con ella y las de todos en el municipio, construiremos una agenda de trabajo eficaz para nuestra gestión.</p>
+                              <p style="margin: 0; font-size: 14px; line-height: 21px;"> </p>
+                              <p style="margin: 0; font-size: 14px; line-height: 21px;">Tu problemática y las necesidades de todo Corregidora son una prioridad para mí, y deben atenderse con oportunidad y buen gobierno, y mi administración velará porque así se realice.</p>
                               <p style="margin: 0; font-size: 14px; line-height: 21px;"> </p>
                               <p style="margin: 0; font-size: 14px; line-height: 21px;">Con tu participación y la de todos, veremos el <strong>Corregidora Posible</strong>, un municipio moderno, ordenado y civil, en el que se construyen oportunidades y se resuelven necesidades, en el que todas las voces son escuchadas y todos los problemas atendidos.</p>
                               <p style="margin: 0; font-size: 14px; line-height: 21px;"> </p>
@@ -337,14 +339,14 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 10px 5px 10px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 15px; padding-bottom: 0px;"><![endif]-->
-                          <div style="line-height: 120%; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 15px 0px 0px 0px;">
-                            <div style="font-size: 12px; line-height: 14px; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; text-align: left;">
+                          <div style="line-height: 120%; color: #555555; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 15px 0px 0px 0px;">
+                            <div style="font-size: 12px; line-height: 14px; color: #555555; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: right;"><span style="color: #000000; font-size: 14px; line-height: 16px;"><strong>Ricardo Astudillo  Suárez</strong></span></p>
                             </div>
                           </div>
                           <!-- [if mso]></td></tr></table><![endif]--></div>
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 0px; padding-left: 0px; padding-top: 0px; padding-bottom: 5px;"><![endif]-->
-                          <div style="line-height: 120%; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 0px 0px 5px 0px;">
+                          <div style="line-height: 120%; color: #555555; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 0px 0px 5px 0px;">
                             <div style="font-size: 12px; line-height: 14px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #555555; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: right;"><span style="font-size: 12px; line-height: 14px;">Candidato a Presidente Municipal</span></p>
                             </div>
@@ -390,7 +392,7 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 5px; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;"><![endif]-->
-                          <div style="line-height: 120%; color: #000000; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
+                          <div style="line-height: 120%; color: #000000; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
                             <div style="font-size: 12px; line-height: 14px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #000000; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: center;"><a href="http://www.ricardoastudillo.info" target="_blank"><span style="font-size: 12px; line-height: 14px;">web</span></a></p>
                             </div>
@@ -404,7 +406,7 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><a href="http://www.ricardoastudillo.info" target="_blank"><!-- [if (!mso)&(!IE)]><!--></a>
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><a href="http://www.ricardoastudillo.info" target="_blank"><!--<![endif]--></a>
                         <div class=""><a href="http://www.ricardoastudillo.info" target="_blank"><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 5px; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;"><![endif]--></a>
-                          <div style="line-height: 120%; color: #000000; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
+                          <div style="line-height: 120%; color: #000000; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
                             <div style="font-size: 12px; line-height: 14px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #000000; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: center;"><a href="http://www.ricardoastudillo.info" target="_blank"><span style="font-size: 12px; line-height: 14px;">facebook</span></a></p>
                             </div>
@@ -418,7 +420,7 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 5px; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;"><![endif]-->
-                          <div style="line-height: 120%; color: #000000; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
+                          <div style="line-height: 120%; color: #000000; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
                             <div style="font-size: 12px; line-height: 14px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #000000; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px; text-align: center;"><span style="font-size: 12px; line-height: 14px;"><a style="color: #000000; text-decoration: none;" href="https://twitter.com/astudilloqro" target="_blank" rel="noopener">twitter</a></span></p>
                             </div>
@@ -432,8 +434,8 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 5px; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;"><![endif]-->
-                          <div style="line-height: 120%; color: #000000; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
-                            <div style="font-size: 12px; line-height: 14px; color: #000000; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; text-align: left;">
+                          <div style="line-height: 120%; color: #000000; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 5px;">
+                            <div style="font-size: 12px; line-height: 14px; color: #000000; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; text-align: left;">
                               <div class="txtTinyMce-wrapper" style="font-size: 12px; line-height: 14px;">
                                 <div class="txtTinyMce-wrapper" style="font-size: 12px; line-height: 14px;">
                                   <div class="txtTinyMce-wrapper" style="font-size: 12px; line-height: 14px;">
@@ -484,7 +486,7 @@ $message = '<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "htt
                     <div style="background-color: transparent; width: 100% !important;"><!-- [if (!mso)&(!IE)]><!-->
                       <div style="border: 0px solid transparent; padding: 5px 0px 5px 0px;"><!--<![endif]-->
                         <div class=""><!-- [if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"><![endif]-->
-                          <div style="line-height: 120%; color: #555555; font-family: 'Lato', Tahoma, Verdana, Segoe, sans-serif; padding: 10px;">
+                          <div style="line-height: 120%; color: #555555; font-family: "Lato", Tahoma, Verdana, Segoe, sans-serif; padding: 10px;">
                             <div style="font-size: 12px; line-height: 14px; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; color: #555555; text-align: left;">
                               <p style="margin: 0; font-size: 14px; line-height: 17px;"><span style="font-size: 12px; line-height: 14px;">Copyright © 2018 Ricardo Astudillo </span><br /><span style="font-size: 12px; line-height: 14px;">Recibes este correo en atención a tu contacto en ricardoastudillo.info</span></p>
                               <p style="margin: 0; font-size: 14px; line-height: 17px;"><span style="font-size: 12px; line-height: 14px;"><a style="color: #71777d; text-decoration: underline;" href="beefree.io" target="_blank" rel="noopener noreferrer"></a></span></p>
