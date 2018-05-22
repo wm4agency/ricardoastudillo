@@ -19,10 +19,10 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
    <header id="hero">
      <?php include_once "p/partials/hero.php"; ?>
    </header>
-   <section id="intro">
+   <section id="intro" class="skewed anteceded">
      <?php include_once "p/partials/intro.php"; ?>
    </section>
-   <section id="metropol">
+   <section id="metropol" class="skewed">
      <?php include_once 'p/partials/metropol.php' ?>
    </section>
    <section id="movilidad">
@@ -31,16 +31,19 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
    <section id="cintillo_posible">
        <?php include_once 'p/partials/cintillo-posible.php' ?>
    </section>
-   <section id="grande">
+   <section id="grande" class="skewed">
      <?php include_once 'p/partials/grande.php' ?>
    </section>
-   <section id="futuro">
+   <section id="futuro" class="skewed preceded">
      <?php include_once 'p/partials/futuro.php' ?>
    </section>
-   <section id="verde">
+   <section id="verde" class="skewed preceded">
      <?php include_once 'p/partials/verde.php' ?>
    </section>
-   <section id="medible">
+   <section id="medible" class="skewed ">
+     <?php include_once 'p/partials/medible.php' ?>
+   </section>
+   <section id="cintillo_frase">
      <?php include_once 'p/partials/medible.php' ?>
    </section>
    <section id="buzon">

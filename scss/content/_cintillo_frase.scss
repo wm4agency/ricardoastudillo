@@ -1,0 +1,39 @@
+section#cintillo_frase{
+  blockquote{
+    width: 100%;
+    background: $a_green_dark no-repeat center center fixed;
+    background-image: linear-gradient(to bottom,transparentize($a_green_dark,.15),transparentize($a_green_dark,.95)),  url(../images/flickr-qro-lavanda.jpg);background-size: cover;
+    padding: .5em;
+    margin: 0;
+    height: 70%;
+    height: 70vh;
+    position: relative;
+
+    .container{  position: absolute;
+    //  margin: 0 auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-weight: 700;
+      font-size: 1.25em;}
+
+    p{
+      color: $w;
+      font-size: .85em;
+      text-align: center;
+      font-weight: 100;
+      line-height: 1.25em;
+    }
+    footer{ background: none;text-align: right;padding-right: 6em;}
+    cite{font-size: .95em;color: $darkest;font-weight: 400;font-style: normal;}
+
+    @media (min-width: $large){
+      height: 50%;
+      height: 50vh;
+
+      p{font-size: 1.125em;}
+
+      cite{font-size: 1.5em;}
+    }
+  }
+}

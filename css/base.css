@@ -1404,10 +1404,60 @@ body {
   font-family: "Gotham", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200; }
 
+.container {
+  z-index: 1; }
+
 section, header {
   position: relative;
   width: 100%;
   display: table; }
+
+section.skewed {
+  margin-bottom: 6em !important; }
+  section.skewed::after {
+    content: '';
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background: inherit;
+    z-index: 0;
+    bottom: -4em;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg); }
+  section.skewed.preceded {
+    padding-top: 6em !important; }
+    section.skewed.preceded::before {
+      content: '';
+      width: 100%;
+      height: 70%;
+      position: absolute;
+      background: inherit;
+      z-index: 0;
+      top: -4em;
+      -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+      transform-origin: left bottom;
+      -webkit-transform: skewY(-3deg);
+      -ms-transform: skewY(-3deg);
+      transform: skewY(-3deg); }
+  section.skewed.anteceded + section::before {
+    content: '';
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    background: inherit;
+    z-index: 0;
+    top: -4em;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg); }
 
 button.hamburger {
   position: absolute;
@@ -1944,22 +1994,21 @@ header#hero {
         right: 0;
         bottom: 30px; } }
 
-section#intro figure.ribbon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417.5 1279.6'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300A49A;%7D .st1%7Bfill:%23B1CA07;%7D .st2%7Bfill:%238C9086;%7D .st3%7Bfill:%23B90066;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='417.5 959.7 228.5 959.7 0 1279.6 189 1279.6 '/%3E%3Cpolygon class='st1' points='417.5 319.9 228.5 319.9 0 0 189 0 '/%3E%3Cpolygon class='st2' points='417.5 319.9 228.5 319.9 0 639.8 189 639.8 '/%3E%3Cpolygon class='st3' points='417.5 959.7 228.5 959.7 0 639.8 189 639.8 '/%3E%3C/svg%3E");
-  background-position: left bottom;
-  background-size: 140px;
-  background-repeat: repeat-y;
-  z-index: 10;
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  bottom: 0; }
-
-section#intro main {
+section#intro {
   background-color: #c4e86b; }
+  section#intro figure.ribbon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417.5 1279.6'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300A49A;%7D .st1%7Bfill:%23B1CA07;%7D .st2%7Bfill:%238C9086;%7D .st3%7Bfill:%23B90066;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='417.5 959.7 228.5 959.7 0 1279.6 189 1279.6 '/%3E%3Cpolygon class='st1' points='417.5 319.9 228.5 319.9 0 0 189 0 '/%3E%3Cpolygon class='st2' points='417.5 319.9 228.5 319.9 0 639.8 189 639.8 '/%3E%3Cpolygon class='st3' points='417.5 959.7 228.5 959.7 0 639.8 189 639.8 '/%3E%3C/svg%3E");
+    background-position: left bottom;
+    background-size: 140px;
+    background-repeat: repeat-y;
+    z-index: 10;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0; }
   section#intro main p {
     font-size: .95em;
     font-weight: 300;
@@ -1970,68 +2019,21 @@ section#intro main {
     section#intro main {
       padding: 1em; } }
 
-section#intro blockquote {
-  width: 100%;
-  background: #799900 no-repeat center center fixed;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 153, 0, 0.85)), to(rgba(121, 153, 0, 0.05))), url(../images/flickr-qro-lavanda.jpg);
-  background-image: -webkit-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-image: -o-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-image: linear-gradient(to bottom, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-size: cover;
-  padding: .5em;
-  margin: 0;
-  height: 70%;
-  height: 70vh;
-  position: relative; }
-  section#intro blockquote .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    font-size: 1.25em; }
-  section#intro blockquote p {
-    color: #fefefe;
-    font-size: .85em;
-    text-align: center;
-    font-weight: 100;
-    line-height: 1.25em; }
-  section#intro blockquote footer {
-    background: none;
-    text-align: right;
-    padding-right: 6em; }
-  section#intro blockquote cite {
-    font-size: .95em;
-    color: #2e2a25;
-    font-weight: 400;
-    font-style: normal; }
-  @media (min-width: 960px) {
-    section#intro blockquote {
-      height: 50%;
-      height: 50vh; }
-      section#intro blockquote p {
-        font-size: 1.125em; }
-      section#intro blockquote cite {
-        font-size: 1.5em; } }
-
-section#intro figure.ribbon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417.5 1279.6'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300A49A;%7D .st1%7Bfill:%23B1CA07;%7D .st2%7Bfill:%238C9086;%7D .st3%7Bfill:%23B90066;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='417.5 959.7 228.5 959.7 0 1279.6 189 1279.6 '/%3E%3Cpolygon class='st1' points='417.5 319.9 228.5 319.9 0 0 189 0 '/%3E%3Cpolygon class='st2' points='417.5 319.9 228.5 319.9 0 639.8 189 639.8 '/%3E%3Cpolygon class='st3' points='417.5 959.7 228.5 959.7 0 639.8 189 639.8 '/%3E%3C/svg%3E");
-  background-position: left bottom;
-  background-size: 140px;
-  background-repeat: repeat-y;
-  z-index: 10;
-  position: absolute;
-  width: 25%;
-  height: 100%;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  bottom: 0; }
-
-section#intro main {
+section#intro {
   background-color: #c4e86b; }
+  section#intro figure.ribbon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 417.5 1279.6'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%2300A49A;%7D .st1%7Bfill:%23B1CA07;%7D .st2%7Bfill:%238C9086;%7D .st3%7Bfill:%23B90066;%7D%0A%3C/style%3E%3Cpolygon class='st0' points='417.5 959.7 228.5 959.7 0 1279.6 189 1279.6 '/%3E%3Cpolygon class='st1' points='417.5 319.9 228.5 319.9 0 0 189 0 '/%3E%3Cpolygon class='st2' points='417.5 319.9 228.5 319.9 0 639.8 189 639.8 '/%3E%3Cpolygon class='st3' points='417.5 959.7 228.5 959.7 0 639.8 189 639.8 '/%3E%3C/svg%3E");
+    background-position: left bottom;
+    background-size: 140px;
+    background-repeat: repeat-y;
+    z-index: 10;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    bottom: 0; }
   section#intro main p {
     font-size: .95em;
     font-weight: 300;
@@ -2041,52 +2043,6 @@ section#intro main {
   @media (min-width: 960px) {
     section#intro main {
       padding: 1em; } }
-
-section#intro blockquote {
-  width: 100%;
-  background: #799900 no-repeat center center fixed;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 153, 0, 0.85)), to(rgba(121, 153, 0, 0.05))), url(../images/flickr-qro-lavanda.jpg);
-  background-image: -webkit-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-image: -o-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-image: linear-gradient(to bottom, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
-  background-size: cover;
-  padding: .5em;
-  margin: 0;
-  height: 70%;
-  height: 70vh;
-  position: relative; }
-  section#intro blockquote .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-weight: 700;
-    font-size: 1.25em; }
-  section#intro blockquote p {
-    color: #fefefe;
-    font-size: .85em;
-    text-align: center;
-    font-weight: 100;
-    line-height: 1.25em; }
-  section#intro blockquote footer {
-    background: none;
-    text-align: right;
-    padding-right: 6em; }
-  section#intro blockquote cite {
-    font-size: .95em;
-    color: #2e2a25;
-    font-weight: 400;
-    font-style: normal; }
-  @media (min-width: 960px) {
-    section#intro blockquote {
-      height: 50%;
-      height: 50vh; }
-      section#intro blockquote p {
-        font-size: 1.125em; }
-      section#intro blockquote cite {
-        font-size: 1.5em; } }
 
 section#metropol {
   background-color: #3e3e3e;
@@ -2608,6 +2564,52 @@ section#medible {
   @media (min-width: 960px) {
     section#medible .container {
       padding: 2em 6em; } }
+
+section#cintillo_frase blockquote {
+  width: 100%;
+  background: #799900 no-repeat center center fixed;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(121, 153, 0, 0.85)), to(rgba(121, 153, 0, 0.05))), url(../images/flickr-qro-lavanda.jpg);
+  background-image: -webkit-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
+  background-image: -o-linear-gradient(top, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
+  background-image: linear-gradient(to bottom, rgba(121, 153, 0, 0.85), rgba(121, 153, 0, 0.05)), url(../images/flickr-qro-lavanda.jpg);
+  background-size: cover;
+  padding: .5em;
+  margin: 0;
+  height: 70%;
+  height: 70vh;
+  position: relative; }
+  section#cintillo_frase blockquote .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 1.25em; }
+  section#cintillo_frase blockquote p {
+    color: #fefefe;
+    font-size: .85em;
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.25em; }
+  section#cintillo_frase blockquote footer {
+    background: none;
+    text-align: right;
+    padding-right: 6em; }
+  section#cintillo_frase blockquote cite {
+    font-size: .95em;
+    color: #2e2a25;
+    font-weight: 400;
+    font-style: normal; }
+  @media (min-width: 960px) {
+    section#cintillo_frase blockquote {
+      height: 50%;
+      height: 50vh; }
+      section#cintillo_frase blockquote p {
+        font-size: 1.125em; }
+      section#cintillo_frase blockquote cite {
+        font-size: 1.5em; } }
 
 section#comunidades {
   background-color: #8a8c8c;
