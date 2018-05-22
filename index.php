@@ -43,13 +43,13 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
    <section id="medible" class="skewed ">
      <?php include_once 'p/partials/medible.php' ?>
    </section>
-   <section id="cintillo_frase">
-     <?php include_once 'p/partials/medible.php' ?>
-   </section>
    <section id="buzon">
      <div class="container">
        <?php include_once "p/components/forma_buzon.php"; ?>
      </div>
+   </section>
+   <section id="cintillo_frase">
+     <?php include_once 'p/partials/cintillo-frase.php' ?>
    </section>
    <section id="comunidades">
      <?php include_once "p/partials/comunidades.php";?>
