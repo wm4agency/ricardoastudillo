@@ -4,16 +4,27 @@
    </span>
 </button>
 <nav id="m-menu">
-  <hgroup class="astudillo">
+  <header class="astudillo">
     <h1>Ricardo Astudillo</h1>
     <h2>candidato a presidente municipal</h2>
     <h3>municipio de Corregidora, Querétaro</h3>
-  </hgroup>
+  </header>
 
-  <ul>
+  <ul class="nav-links">
     <li data-target="#intro">Ricardo</li>
-    <li data-target="#comunidades">comunidades</li>
+    <!-- <li data-target="#comunidades">comunidades</li> -->
+    <li data-target="#metropol">metropol</li>
+    <li data-target="#movilidad">movilidad</li>
+    <li data-target="#grande">gestión</li>
+    <li data-target="#futuro">futuro</li>
+    <li data-target="#verde">verde</li>
+    <li data-target="#medible">medible</li>
     <li data-target="#buzon">buzón ciudadano</li>
     <li data-target="#reclutamiento">únete</li>
   </ul>
+   <ul class="sociales">
+     <li><i class="fab fa-facebook-square"></i></li>
+     <li><i class="fab fa-instagram"></i></li>
+     <li><i class="fab fa-twitter-square"></i></li>
+   </ul>
 </nav>

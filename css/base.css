@@ -1204,7 +1204,7 @@ aside#slidding_menu {
   aside#slidding_menu nav {
     position: absolute;
     width: 90%;
-    padding: 1.5em;
+    padding: .5em;
     margin: 0;
     top: 50%;
     left: 50%;
@@ -1212,8 +1212,8 @@ aside#slidding_menu {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center; }
-    aside#slidding_menu nav ul li {
-      font-size: 1.5em;
+    aside#slidding_menu nav ul.nav-links li {
+      font-size: 1em;
       line-height: 1.25em;
       padding-bottom: .25em;
       text-transform: uppercase;
@@ -1221,16 +1221,20 @@ aside#slidding_menu {
       text-transform: uppercase;
       color: #fefefe;
       list-style: none; }
-      aside#slidding_menu nav ul li:hover, aside#slidding_menu nav ul li:active {
+      aside#slidding_menu nav ul.nav-links li:hover, aside#slidding_menu nav ul.nav-links li:active {
         color: #3e3e3e; }
     aside#slidding_menu nav ul.sociales li {
       display: inline-block; }
       aside#slidding_menu nav ul.sociales li .fa {
-        font-size: 1.5em;
-        padding: 10px;
-        color: #3e3e3e; }
+        font-size: 2em;
+        padding: 2em; }
         aside#slidding_menu nav ul.sociales li .fa:hover, aside#slidding_menu nav ul.sociales li .fa:active {
-          color: #fefefe; }
+          color: #c4e86b;
+          background-color: transparent; }
+    aside#slidding_menu nav ul.sociales::after {
+      content: "@rastudilloqro";
+      display: block;
+      font-weight: 400; }
   @media (min-width: 960px) {
     aside#slidding_menu {
       min-height: auto;
@@ -1241,24 +1245,49 @@ aside#slidding_menu {
       aside#slidding_menu .astudillo {
         display: none; }
       aside#slidding_menu nav {
-        width: 100%;
+        width: 85%;
+        position: relative;
         left: 0;
         top: 0;
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
-        text-align: left; }
-        aside#slidding_menu nav ul li {
-          font-size: .75em;
-          color: #3e3e3e;
-          display: inline-block;
-          text-align: left;
-          line-height: 2em;
-          padding: 0 .5em; }
-          aside#slidding_menu nav ul li:hover {
-            cursor: pointer;
-            color: #fefefe;
-            background-color: rgba(154, 176, 6, 0.5); } }
+        text-align: left;
+        margin: 0 auto; }
+        aside#slidding_menu nav ul.nav-links {
+          display: inline-block; }
+          aside#slidding_menu nav ul.nav-links li {
+            display: inline-block;
+            font-size: .65em;
+            color: #3e3e3e;
+            display: inline-block;
+            text-align: left;
+            line-height: 2em;
+            padding: 0 .5em; }
+            aside#slidding_menu nav ul.nav-links li:hover {
+              cursor: pointer;
+              color: #799900;
+              border-bottom: 1px solid #799900; }
+        aside#slidding_menu nav ul.sociales {
+          text-align: right;
+          position: relative;
+          display: block;
+          float: right;
+          top: 0; }
+          aside#slidding_menu nav ul.sociales li {
+            font-size: 1.25em;
+            line-height: 1em;
+            color: #799900;
+            padding: .125em;
+            margin: 0; }
+            aside#slidding_menu nav ul.sociales li:hover {
+              cursor: pointer;
+              color: #3e3e3e; }
+          aside#slidding_menu nav ul.sociales::after {
+            bottom: -30%;
+            font-size: 1.25rem;
+            color: #646569;
+            margin-top: -.5em; } }
 
 div#panel {
   background-color: #fefefe;
@@ -2788,6 +2817,9 @@ section#reclutamiento select, section#reclutamiento option.placeholder {
 footer {
   background-color: #3e3e3e; }
   footer .astudillo {
-    margin: 0 auto; }
+    margin: 3em auto; }
+    @media (min-width: 650px) {
+      footer .astudillo {
+        width: 50%; } }
 
 /*# sourceMappingURL=base.css.map */

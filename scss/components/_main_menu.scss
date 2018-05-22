@@ -43,16 +43,16 @@ aside#slidding_menu{
     nav{
         position: absolute;
         width: 90%;
-        padding: 1.5em;
+        padding: .5em;
         margin: 0;
         top:50%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
 
-        ul li{
+        ul.nav-links li{
             //@extend %serif;
-            font-size: 1.5em;
+            font-size: 1em;
             line-height: 1.25em;
             padding-bottom: .25em;
             text-transform: uppercase;
@@ -64,16 +64,27 @@ aside#slidding_menu{
             &:hover, &:active{color: $dark;}
         }
 
-        ul.sociales li{
-            display: inline-block;
-            .fa{
-                font-size: 1.5em;
-                padding: 10px;
-                //margin-top: 50px;
-                color: $dark;
+        ul.sociales {
 
-                &:hover, &:active{color: $w;}
-            }
+          li{
+              display: inline-block;
+              .fa{
+                  font-size: 2em;
+                  padding:2em;
+                  //margin-top: 50px;
+
+                  &:hover, &:active{
+                    color: $a_green;
+                    background-color:transparent;
+                  }
+              }
+          }
+
+          &::after{
+            content: "@rastudilloqro";
+            display: block;
+            font-weight: 400;
+          }
         }
     }
 
@@ -87,23 +98,56 @@ aside#slidding_menu{
       .astudillo{display: none;}
 
       nav {
-        width: 100%;
+        width: 85%;
+        position: relative;
         left: 0;
         top: 0;
         transform: none;
         text-align: left;
+        margin: 0 auto;
 
-        ul li{
-          font-size: .75em;
-          color: $dark;
+        ul.nav-links {
           display: inline-block;
-          text-align: left;
-          line-height: 2em;
-          //margin-right: .5em;
-          padding: 0 .5em;
 
-          //&:last-child{margin-right: 0;}
-          &:hover{cursor: pointer;color: $w; background-color: transparentize($action-color,.5)}
+          li{
+            display: inline-block;
+            font-size: .65em;
+            color: $dark;
+            display: inline-block;
+            text-align: left;
+            line-height: 2em;
+            //margin-right: .5em;
+            padding: 0 .5em;
+
+            //&:last-child{margin-right: 0;}
+            &:hover{cursor: pointer;color: $a_green_dark;border-bottom: 1px solid $a_green_dark;}
+          }
+        }
+
+        ul.sociales{
+          text-align: right;
+          position: relative;
+          display: block;
+          float: right;
+          top:0;
+
+          li{
+            font-size: 1.25em;
+            line-height: 1em;
+            color: $a_green_dark;
+            padding:.125em;
+            margin: 0;
+
+            &:hover{cursor: pointer;color: $dark;}
+          }
+
+          &::after{
+            //position: absolute;
+            bottom: -30%;
+            font-size: 1.25rem;
+            color: $a_grey;
+            margin-top: -.5em;
+          }
         }
       }
     }
