@@ -81,7 +81,7 @@ aside#slidding_menu{
           }
 
           &::after{
-            content: "@rastudilloqro";
+            content: "@astudilloqro";
             display: block;
             font-weight: 400;
           }
@@ -131,12 +131,13 @@ aside#slidding_menu{
           float: right;
           top:0;
 
-          li{
+          li a{
             font-size: 1.25em;
             line-height: 1em;
             color: $a_green_dark;
             padding:.125em;
             margin: 0;
+            text-decoration: none;
 
             &:hover{cursor: pointer;color: $dark;}
           }

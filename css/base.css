@@ -1232,7 +1232,7 @@ aside#slidding_menu {
           color: #c4e86b;
           background-color: transparent; }
     aside#slidding_menu nav ul.sociales::after {
-      content: "@rastudilloqro";
+      content: "@astudilloqro";
       display: block;
       font-weight: 400; }
   @media (min-width: 960px) {
@@ -1274,13 +1274,14 @@ aside#slidding_menu {
           display: block;
           float: right;
           top: 0; }
-          aside#slidding_menu nav ul.sociales li {
+          aside#slidding_menu nav ul.sociales li a {
             font-size: 1.25em;
             line-height: 1em;
             color: #799900;
             padding: .125em;
-            margin: 0; }
-            aside#slidding_menu nav ul.sociales li:hover {
+            margin: 0;
+            text-decoration: none; }
+            aside#slidding_menu nav ul.sociales li a:hover {
               cursor: pointer;
               color: #3e3e3e; }
           aside#slidding_menu nav ul.sociales::after {
@@ -1701,8 +1702,8 @@ header#hero {
   background-attachment: fixed; }
   @media (min-width: 960px) {
     header#hero {
-      height: 70%;
-      height: 70vh; } }
+      height: 80%;
+      height: 80vh; } }
   header#hero .container {
     height: 100%;
     height: 100vh;

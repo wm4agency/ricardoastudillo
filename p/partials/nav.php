@@ -23,8 +23,8 @@
     <li data-target="#reclutamiento">únete</li>
   </ul>
    <ul class="sociales">
-     <li><i class="fab fa-facebook-square"></i></li>
-     <li><i class="fab fa-instagram"></i></li>
-     <li><i class="fab fa-twitter-square"></i></li>
+     <li><a href="https://www.facebook.com/astudilloqro" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+     <li><a href="https://twitter.com/astudilloqro" target="_blank"><i class="fab fa-instagram"></i></a></li>
+     <li><a href="https://www.instagram.com/astudilloqro/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
    </ul>
 </nav>
