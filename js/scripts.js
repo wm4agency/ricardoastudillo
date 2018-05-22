@@ -4,16 +4,18 @@ $(document).ready(function($){
   //unsliderInit();
 });
 
+var panel = document.getElementById('panel');
+
 function mediaQueryBind() {
   document.addEventListener('animationend', function(event){
     //console.log(event.animationName);
 
     switch (event.animationName){
       case "large":
-        //console.log('large detected');
+        console.log('large detected');
         break;
       case "small":
-        //console.log('small to medium detected');
+        console.log('small to medium detected');
         break;
     }
   }, false);
@@ -63,21 +65,58 @@ function navegar(e){
         at;
 
     if( t.startsWith("#")){
-        if(document.getElementsByClassName("m-nav-toggler").length>0)togglenav();;
-        at = t;
+        //if(document.getElementsByClassName("m-nav-toggler").length>0)togglenav();
+        togglers= document.getElementsByClassName("m-nav-toggler");
+        toggler_v = (togglers[0].offsetParent === null);
+
+        if(toggler_v == false){
+          window.location = t;
+          togglenav();
+
+          /* Listen for a transition! */
+          /*var transitionEvent = whichTransitionEvent();
+          transitionEvent && panel.addEventListener(transitionEvent, function() {
+          	console.log('Transition complete!  let´s scroll!');
+          });*/
+
+        }
+        else{
+          $('html, body').animate({scrollTop: $(t).offset().top}, 1000);
+        }
+        //console.log(toggler_v);
+
     }
-    else if(t.startsWith("http")) {at = t;}
-    else if(t.startsWith("?")){at = rootpath+'/'+e.getAttribute('data-target');}
-    else if(t=="home"){at = rootpath;}
-    else if(t=="contacto"){at = rootpath+'/#contacto';}
+    else if(t.startsWith("http")) {  window.location = t;}
+    else if(t.startsWith("?")){  window.location = rootpath+'/'+e.getAttribute('data-target');}
+    else if(t=="home"){  window.location = rootpath;}
+    else if(t=="contacto"){ window.location = rootpath+'/#contacto';}
     console.log(t);
-    window.location=at;
+    //window.location=at;
 }
 function togglenav(){
-    var panel = document.getElementById('panel');
     console.log('toggle!');
-    panel.classList.toggle("sliding");
+    if(panel)panel.classList.toggle("sliding");
 }
+
+function whichTransitionEvent(){
+    var t;
+    var el = document.createElement('fakeelement');
+    var transitions = {
+      'transition':'transitionend',
+      'OTransition':'oTransitionEnd',
+      'MozTransition':'transitionend',
+      'WebkitTransition':'webkitTransitionEnd'
+    }
+
+    for(t in transitions){
+        if( el.style[t] !== undefined ){
+            return transitions[t];
+        }
+    }
+}
+
+
+
 function modalInit(){
     // Get the modal
     var modal = document.getElementById('modal_contacto');
