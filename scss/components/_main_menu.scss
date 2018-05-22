@@ -131,15 +131,18 @@ aside#slidding_menu{
           float: right;
           top:0;
 
-          li a{
-            font-size: 1.25em;
-            line-height: 1em;
-            color: $a_green_dark;
-            padding:.125em;
-            margin: 0;
-            text-decoration: none;
+          li {
+            margin:0;
+            a{
+              font-size: 1.25em;
+              line-height: 1em;
+              color: $a_green_dark;
+              padding:.125em;
+              margin: 0;
+              text-decoration: none;
 
-            &:hover{cursor: pointer;color: $dark;}
+              &:hover{cursor: pointer;color: $dark;}
+            }
           }
 
           &::after{

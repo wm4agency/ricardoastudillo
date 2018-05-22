@@ -13,21 +13,12 @@ header#hero{
 
     .container{
       height: 100%;
-      height: 100vh;
-      width: 90%;
-
-      @media (min-width: $large){
-        height: 70%;
-        height: 70vh;
-      }
-
+      width: 100%;
     }
 
     .ricardo{
       height: 100%;
-      height: 100vh;
       width: 100%;
-      width: 100vw;
       background-image:  url(../images/RicardoAstudillo_frontal.png);
       background-repeat: no-repeat;
       background-position: bottom left calc(100% + 150px);
@@ -36,6 +27,7 @@ header#hero{
       position: absolute;
       margin: 0;
       z-index: 10;
+      bottom: 0;
 
       @include fadeInRight();
       @media (min-height: 730px){
@@ -43,10 +35,10 @@ header#hero{
       }
 
       @media (min-width: $large){
-        height: 70%;
-        height: 70vh;
-        background-size: auto 60vh;
-        background-position: bottom 150px right 47%;
+        //height: 80%;
+        //height: 80vh;
+        background-size: auto 70%;
+        background-position: bottom 17vh right 47%;
         background-image:  url(../images/RicardoAstudillo_Brazos-abiertos.png);
       }
     }
@@ -76,8 +68,8 @@ header#hero{
     }
 
     .logos{
-      width: 70%;
-      left: 0;
+      width: 65%;
+      left: 1em;
       position: absolute;
       bottom: 0;
       height: 60%;
@@ -89,12 +81,13 @@ header#hero{
     }
 
     .corregidora{
-      width: 100%;
+      width: 85%;
+      margin: 0 auto;
       display: block;
       @include fadeIn();
 
       @media (min-width: $large){
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
       }
 
