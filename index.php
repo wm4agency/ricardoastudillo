@@ -55,7 +55,8 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
      <?php include_once 'p/partials/cintillo-frase.php' ?>
    </section>
    <section id="comunidades">
-     <?php include_once "p/partials/comunidades.php";?>
+     <?php //include_once "p/partials/comunidades.php";?>
+     <div class="social-feed-container"></div>
    </section>
    <section id="reclutamiento">
      <div class="container">

@@ -12,6 +12,7 @@
 
   <ul class="nav-links">
     <li data-target="#intro">Ricardo</li>
+    <li data-target="#puntos">propuesta</li>
     <!-- <li data-target="#comunidades">comunidades</li> -->
     <li data-target="#metropol">metropol</li>
     <li data-target="#movilidad">movilidad</li>

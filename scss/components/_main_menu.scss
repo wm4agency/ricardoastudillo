@@ -63,29 +63,6 @@ aside#slidding_menu{
 
             &:hover, &:active{color: $dark;}
         }
-
-        ul.sociales {
-
-          li{
-              display: inline-block;
-              .fa{
-                  font-size: 2em;
-                  padding:2em;
-                  //margin-top: 50px;
-
-                  &:hover, &:active{
-                    color: $a_green;
-                    background-color:transparent;
-                  }
-              }
-          }
-
-          &::after{
-            content: "@astudilloqro";
-            display: block;
-            font-weight: 400;
-          }
-        }
     }
 
     @media (min-width:$large){
