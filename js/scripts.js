@@ -2,7 +2,7 @@ $(document).ready(function($){
   mediaQueryBind();
   delegateEvents();
   //unsliderInit();
-  socialFeedInit();
+  //socialFeedInit();
 });
 
 var panel = document.getElementById('panel');

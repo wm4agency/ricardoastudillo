@@ -1,25 +1,41 @@
 section#cintillo_posible{
   background-color: $dark;
   color: $w;
+  padding-bottom: 30%;
 
   .wrapper{
-    width: 100%;
-    padding: 1%;
+    width: 86%;
+    //padding: 1%;
+    display: block;
+    //margin: 1em auto;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
   }
 
   img{
-    width: 35%;
+    width: 32%;
     display: inline-block;
-    margin: 0 0 -.75em 1%;
+    //margin: 0 0 -.75em 1%;
     padding: 0;
   }
   h1{
   //  text-align: center;
-    width: 62%;
+    //width: 72%;
     display: inline-block;
     font-size: 1.5em;
     line-height: 1.5em;
 
-    strong{font-size: 2.5em;}
+    strong{
+      font-size: 2.5em;
+      display: block;
+    }
+  }
+  @media (min-width:$large){
+    padding-bottom: 20%;
+    .wrapper{width: 53%;}
+    img{width: 31%;}
+    h1{font-size: 3.125em;}
   }
 }

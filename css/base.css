@@ -2646,22 +2646,37 @@ section#movilidad {
 
 section#cintillo_posible {
   background-color: #3e3e3e;
-  color: #fefefe; }
+  color: #fefefe;
+  padding-bottom: 30%; }
   section#cintillo_posible .wrapper {
-    width: 100%;
-    padding: 1%; }
+    width: 86%;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   section#cintillo_posible img {
-    width: 35%;
+    width: 32%;
     display: inline-block;
-    margin: 0 0 -.75em 1%;
     padding: 0; }
   section#cintillo_posible h1 {
-    width: 62%;
     display: inline-block;
     font-size: 1.5em;
     line-height: 1.5em; }
     section#cintillo_posible h1 strong {
-      font-size: 2.5em; }
+      font-size: 2.5em;
+      display: block; }
+  @media (min-width: 960px) {
+    section#cintillo_posible {
+      padding-bottom: 20%; }
+      section#cintillo_posible .wrapper {
+        width: 53%; }
+      section#cintillo_posible img {
+        width: 31%; }
+      section#cintillo_posible h1 {
+        font-size: 3.125em; } }
 
 section#grande {
   color: #fefefe;
