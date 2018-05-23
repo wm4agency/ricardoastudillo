@@ -1,0 +1,70 @@
+section#puntos{
+  background-color: $w;
+  padding: 1.5em 0;
+
+  h1,h3{
+    margin: 0 auto;
+    text-align: center;
+    color: $a_grey;
+  }
+
+  h1{
+    font-size: 3.5rem;
+    margin: 1em auto;
+    line-height: 1em;
+  }
+
+  h3{font-size: 2rem;}
+
+  ul {
+    border-top: 1px solid $a_green_dark;
+    border-bottom: 1px solid $a_green_dark;
+    padding: 1em 0;
+    margin: .5em 0;
+
+    li{
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      list-style: none;
+      height: 9em;
+      overflow: hidden;
+
+      h2{
+        margin: 0;
+        color: $a_green;
+        font-size: 1.5em;
+        strong{
+          font-size: 2em;
+          display: block;
+          line-height: .75em;
+        }
+      }
+
+      p{
+        height: 3.5em;
+        color: $dark;
+        line-height: 1.25em;
+        margin-top: .25em;
+      }
+
+      @media (min-width: $large){
+        width: 30%;
+        padding: 1%;
+      }
+    }
+  }
+
+  footer{
+    background-color: transparent;
+    padding: 1em 0;
+
+    .fa-chevron-down{
+      @include fadeInDown();
+      color: $a_green;
+      font-size: 3em;
+      margin: 0 auto;
+      display: block;;
+    }
+  }
+}

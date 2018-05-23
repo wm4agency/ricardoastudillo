@@ -19,10 +19,13 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
    <header id="hero">
      <?php include_once "p/partials/hero.php"; ?>
    </header>
-   <section id="intro" class="skewed anteceded">
+   <section id="intro">
      <?php include_once "p/partials/intro.php"; ?>
    </section>
-   <section id="metropol" class="skewed">
+   <section id="puntos" class="skewed">
+     <?php include_once "p/partials/puntos.php"; ?>
+   </section>
+   <section id="metropol" class="skewed preceded">
      <?php include_once 'p/partials/metropol.php' ?>
    </section>
    <section id="movilidad">
