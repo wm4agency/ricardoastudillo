@@ -40,7 +40,7 @@ h1,h2{
       width: 49.25%;
       display: inline-block;
       position: relative;
-      margin: 20% 0;
+      margin: 30% 0;
 
       img,figcaption{position: absolute;}
       figcaption{
@@ -54,7 +54,7 @@ h1,h2{
           top: 0;
           margin-top: 50%;
         }
-        figcaption{bottom: -17.5%;}
+        figcaption{bottom: -6.5em;}
       }
       &:nth-child(even){
         padding-top: 100%;
@@ -62,13 +62,13 @@ h1,h2{
           bottom: 0;
           margin-bottom: 50%;
         }
-        figcaption{top:-17.5%;}
+        figcaption{top:-5em;}
       }
 
 
       &.metro-respuesta{figcaption{bottom: -15%;}}
       //&.metro-c2s{figcaption{top: -40%;}}
-      &.metro-recon{figcaption{bottom: -25%;}}
+      &.metro-recon{figcaption{bottom: -6.5em;}}
       //&.metro-comercioseg{figcaption{top: -25%;}}
       &.metro-drones{
         img{top: -2.5%;}

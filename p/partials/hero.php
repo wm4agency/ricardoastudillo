@@ -1,5 +1,6 @@
 <div class="container">
   <figure class="ricardo"></figure>
+  <!-- <figure class="pruebastu"></figure> -->
   <figure class="corregidora">
     <header>
       <h3>Corregidora</h3>

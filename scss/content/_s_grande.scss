@@ -8,10 +8,15 @@ section#grande{
     list-style: none;
     padding-left: .5em;
     border-left: 3px solid $a_green;
-    line-height: 1.15em;
+    line-height: 1.25em;
     margin-bottom: 1.5em;
+    p{
+      display: table;
+      background-color: crimson;
+      color:$w;
+    }
 
-    strong{font-weight: 300;}
+    strong{font-weight: 400;}
   }
 
   @media (min-width: $large){

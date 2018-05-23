@@ -9,7 +9,7 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
 
  <!-- PRELOADER
  -------------------->
-<<?php include_once "p/components/preloader.php"; ?>
+<?php include_once "p/components/preloader.php"; ?>
 
 
 <aside id="slidding_menu">

@@ -14,6 +14,14 @@ section,header{
   display: table;
 }
 
+.pruebastu{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-image:  url(../images/RicardoAstudillo_frontal_opt.png);
+  background-color: transparentize(crimson,.5);
+}
+
 nav ul.sociales {
   li{
       display: inline-block;

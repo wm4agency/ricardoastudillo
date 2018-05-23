@@ -23,23 +23,26 @@ header#hero{
       background-repeat: no-repeat;
       background-position: bottom left calc(100% + 150px);
       background-size: auto 90%;
-      background-attachment: fixed;
+      //background-size: contain;
+      //background-attachment: fixed;
+      //background-color: crimson;
       position: absolute;
       margin: 0;
       z-index: 10;
       bottom: 0;
-
       @include fadeInRight();
+
       @media (min-height: 730px){
-        background-position: bottom left calc(100% + 200px);
+        background-position: bottom left calc(100% + 215px);
       }
 
       @media (min-width: $large){
         //height: 80%;
         //height: 80vh;
         background-size: auto 70%;
+        background-position: bottom right;
         background-position: bottom 17vh right 47%;
-        background-image:  url(../images/RicardoAstudillo_Brazos-abiertos_opt.png);
+        background-image:  url(../images/RicardoAstudillo_Brazos-abiertos.png);
       }
     }
 
