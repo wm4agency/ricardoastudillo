@@ -1,4 +1,5 @@
 $(document).ready(function($){
+  document.getElementById('preloader')&&$("#preloader").fadeOut("slow");
   mediaQueryBind();
   delegateEvents();
   //unsliderInit();

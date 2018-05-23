@@ -7,6 +7,11 @@ if (! include_once "p/partials/head.php"){echo "no head found";die();}
 if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";}
  ?>
 
+ <!-- PRELOADER
+ -------------------->
+<<?php include_once "p/components/preloader.php"; ?>
+
+
 <aside id="slidding_menu">
   <?php include_once "p/partials/nav.php"; ?>
 </aside>
