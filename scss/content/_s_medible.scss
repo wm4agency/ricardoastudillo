@@ -8,7 +8,9 @@ section#medible{
   li{
     @include i_check();
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
   }
   @media (min-width: $large){
     .container{  padding: 2em 6em;}

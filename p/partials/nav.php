@@ -1,15 +1,18 @@
+<!--
 <button class="hamburger hamburger--arrow-r" type="button">
    <span class="hamburger-box m-nav-toggler">
      <span class="hamburger-inner"></span>
    </span>
 </button>
+-->
+<i class="burger m-nav-toggler"></i>
+
 <nav id="m-menu">
   <header class="astudillo">
     <h1>Ricardo Astudillo</h1>
     <h2>candidato a presidente municipal</h2>
     <h3>municipio de Corregidora, Querétaro</h3>
   </header>
-
   <ul class="nav-links">
     <li data-target="#intro">Ricardo</li>
     <li data-target="#puntos">propuesta</li>

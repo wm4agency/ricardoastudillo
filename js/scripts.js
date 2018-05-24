@@ -31,8 +31,10 @@ function delegateEvents(){
     //port touch events to click events
     document.addEventListener('touchend', function(e) {
       /* prevent delay and simulated mouse events */
-      //e.stopPropagation();
-      //e.preventDefault();
+      if (e.classList.contains( "m-nav-toggler" ) ){
+        e.stopPropagation();
+        e.preventDefault();
+      }
       /* trigger the actual behavior we bound to the 'click' event */
       e.target.click();
     });

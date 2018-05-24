@@ -32,7 +32,8 @@ aside#slidding_menu{
     width: 100vw;
     z-index: 0;
 
-    button.hamburger{color: $w;}
+    //button.hamburger{color: $w;}
+    i.burger::after{@include burger($a_green);}
 
     .astudillo{
       @include astudillo($a_green,$a_green_dark,$w,$w);

@@ -12,7 +12,8 @@ section#reclutamiento{
   legend{
     overflow: hidden;
     .fa,.svg-inline--fa{
-      font-size: 3em;
+      font-size: 4em;
+      margin-bottom: .5em;
       color: $a_grey;
     }
     h3{
@@ -25,8 +26,13 @@ section#reclutamiento{
     p{font-size: .95em;}
   }
 
-  input[type],select{
+  input[type],select, option{
     border-bottom-color: $a_green;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    height: 6rem;
+    font: -apple-system-body;
+
     &::placeholder{color:$a_green_dark;}
   }
   input#edad{
@@ -38,7 +44,7 @@ section#reclutamiento{
       padding: 11px 0;
       text-transform: uppercase;
       color: $a_green_dark;
-      border-bottom: 1px solid $a_green;
+      //border-bottom: 1px solid $a_green;
       &+label{font-size: .75em;margin: -15px 0 15px 0;color:$a_green_dark;}
     }
   }

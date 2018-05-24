@@ -8,9 +8,16 @@ $m_w_small:350px;
 $m_w_medium:400px;
 $m_w_large:760px;
 $m_w_pro:980px;
-$h_medium:700px;
+$m_h_small:570px;
+$m_h_medium:700px;
 $m_h_large:800px;
 $m_h_pro:1300px;
+
+%proofing{
+  border: 1px dotted whitesmoke;
+  background:transparentize(crimson, .95);
+}
+
 
 @media (min-width:$small){
   html,body{

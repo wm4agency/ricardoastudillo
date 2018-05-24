@@ -26,6 +26,7 @@ section#buzon{
     h4{color: black; margin:0;}
     p{
       font-weight: 300;
+      color: $darkest;
     }
   }
 
@@ -34,5 +35,10 @@ section#buzon{
     font-size: 1.5rem;
   }
 
-  input[type],textarea{color: $a_green;}
+  input[type],textarea{
+    color: $a_green;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    font: -apple-system-body;
+  }
 }

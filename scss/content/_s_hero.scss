@@ -39,6 +39,7 @@ header#hero{
       @media (min-width: $large){
         //height: 80%;
         //height: 80vh;
+        background-attachment: fixed;
         background-size: auto 70%;
         background-position: bottom right;
         background-position: bottom 17vh right 47%;

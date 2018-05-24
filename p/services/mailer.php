@@ -35,7 +35,7 @@ $headers .= 'From: ricardoastudillo.info<no-reply@ricardoastudillo.info>'. "\r\n
 switch($cat){
     case "buzon":
         $to = "=?UTF-8?B?".base64_encode('Contacto Ciudadano')."?=".'<contacto@ricardoastudillo.info>';
-        $recipients = "oscar@wm4.mx,maru@wm4.mx, pepe@wm4.mx";
+        $recipients = "oscar@wm4.mx,mmonroy.lan@gmail.com,pepemolinatorres@gmail.com,grubicamargo@gmail.com";
         //$recipients = "oscar@wm4.mx";
         $subject = "=?UTF-8?B?".base64_encode('Nuevo registro en Buzón Ciudadano - ricardoastudillo.info')."?=";
         $headers .= 'BCC: '.$recipients.' '. "\r\n";
@@ -67,7 +67,7 @@ switch($cat){
         break;
     case "registro":
         $to = "=?UTF-8?B?".base64_encode('Equipo Astudillo')."?=".'<contacto@ricardoastudillo.info>';
-        $recipients = "oscar@wm4.mx,maru@wm4.mx,bety@wm4.mx, pepe@wm4.mx";
+        $recipients = "oscar@wm4.mx,mmonroy.lan@gmail.com,pepemolinatorres@gmail.com,grubicamargo@gmail.com";
         //$recipients = "oscar@wm4.mx";
         $subject = "=?UTF-8?B?".base64_encode('Registro de colaborador - ricardoastudillo.info')."?=";
         $headers .= 'BCC: '.$recipients.' '. "\r\n";

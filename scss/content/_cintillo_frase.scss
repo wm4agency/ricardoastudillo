@@ -1,8 +1,8 @@
 section#cintillo_frase{
   blockquote{
     width: 100%;
-    background: $a_green_dark no-repeat center center fixed;
-    background-image: linear-gradient(to bottom,transparentize($a_green_dark,.15),transparentize($a_green_dark,.95)),  url(../images/flickr-qro-lavanda_mov.jpg);background-size: cover;
+    background: $a_green_dark no-repeat center center scroll;
+    background-image: linear-gradient(to bottom,transparentize($a_green_dark,.05),transparentize($a_green_dark,.5)),  url(../images/flickr-qro-lavanda_mov.jpg);background-size: cover;
     padding: .5em;
     margin: 0;
     height: 70%;
@@ -28,6 +28,7 @@ section#cintillo_frase{
     cite{font-size: .95em;color: $darkest;font-weight: 400;font-style: normal;}
 
     @media (min-width: $large){
+      background-attachment: fixed;
       height: 50%;
       height: 50vh;
       background-image: linear-gradient(to bottom,transparentize($a_green_dark,.15),transparentize($a_green_dark,.95)),  url(../images/flickr-qro-lavanda.jpg);background-size: cover;

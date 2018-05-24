@@ -16,11 +16,14 @@ if (! include_once "p/components/graphic_assets.php"){echo "no graphic assets!";
   <?php include_once "p/partials/nav.php"; ?>
 </aside>
  <div id="panel">
+<!--
    <button class="hamburger hamburger--arrow" type="button">
       <span class="hamburger-box m-nav-toggler">
         <span class="hamburger-inner"></span>
       </span>
    </button>
+-->
+<i class="burger m-nav-toggler"></i>
    <header id="hero">
      <?php include_once "p/partials/hero.php"; ?>
    </header>

@@ -6,14 +6,24 @@ section#grande{
 
   li{
     list-style: none;
-    padding-left: .5em;
+    padding-left: 1.5rem;
     border-left: 3px solid $a_green;
     line-height: 1.25em;
-    margin-bottom: 1.5em;
+    margin-bottom: 2rem;
     p{
-      display: table;
-      background-color: crimson;
-      color:$w;
+      display: inline-block;
+      //background-color: crimson;
+      //color:$w;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      //padding: 0;
+      //margin: 0;
+      z-index: 999;
+      display: block;
+      color: inherit;
+      margin-bottom: 4rem;
+      font: -apple-system-body;
+      strong{font-weight: 400;color: $a_green;}
     }
 
     strong{font-weight: 400;}

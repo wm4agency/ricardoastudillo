@@ -3,9 +3,9 @@
     <legend>
       <hgroup>
         <h3><i class="far fa-envelope"></i>Buzón<br />Ciudadano</h3>
-        <h4>Queremos escucharte</h4>
+        <h4>¡Quiero escucharte!</h4>
       </hgroup>
-      <p>Comparte con Ricardo los problemas en tu comunidad, y/o las propuestas e ideas para construir un Corregidora más robusto, justo y mejor para todos.</p>
+      <p>Comparte conmigo los problemas en tu comunidad y/o las propuestas e ideas para construir un <b>#CorregidoraPosible.</b></p>
     </legend>
     <input type="email" name="correo" id="correo" placeholder="correo electrónico" class="required">
     <input type="text" name="nombre" id="nombre" placeholder="nombre (opcional)">

@@ -14,12 +14,26 @@ section,header{
   display: table;
 }
 
-.pruebastu{
-  width: 100%;
-  height: 100%;
-  background-size: contain;
-  background-image:  url(../images/RicardoAstudillo_frontal_opt.png);
-  background-color: transparentize(crimson,.5);
+i.burger{
+  width: 38px;
+  @include img_sprite(100%);
+  position: absolute;
+  top:1em;
+  right: 1em;
+  z-index: 999;
+  display: block;
+  touch-action: none;
+  color: $a_green;
+  border: none;
+  outline: 0;
+
+  &::after{
+    background: no-repeat center center;
+    @include burger($dark);
+
+    &:active{  @include burger($warning_orange);}
+  }
+  @media(min-width: $large){display: none;}
 }
 
 nav ul.sociales {

@@ -23,7 +23,7 @@
       <p><strong>50% de los cargos de 1er nivel serán para mujeres.</strong></p>
     </li>
     <li>
-      <p><strong>Fortaleceremos programas para la mujer y jefas de familia</strong> a través del sistema DIF municipal</p>.
+      <p><strong>Fortaleceremos programas para la mujer y jefas de familia</strong> a través del sistema DIF municipal.</p>
     </li>
   </ul>
 </div>
