@@ -1223,6 +1223,10 @@ aside#slidding_menu {
       list-style: none; }
       aside#slidding_menu nav ul.nav-links li:hover, aside#slidding_menu nav ul.nav-links li:active {
         color: #3e3e3e; }
+    aside#slidding_menu nav ul.sociales a {
+      color: #c4e86b; }
+    aside#slidding_menu nav ul.sociales::after {
+      color: #3e3e3e; }
   @media (min-width: 960px) {
     aside#slidding_menu {
       min-height: auto;
@@ -1264,21 +1268,8 @@ aside#slidding_menu {
           top: 0; }
           aside#slidding_menu nav ul.sociales li {
             margin: 0; }
-            aside#slidding_menu nav ul.sociales li a {
-              font-size: 1.25em;
-              line-height: 1em;
-              color: #799900;
-              padding: .125em;
-              margin: 0;
-              text-decoration: none; }
-              aside#slidding_menu nav ul.sociales li a:hover {
-                cursor: pointer;
-                color: #3e3e3e; }
-          aside#slidding_menu nav ul.sociales::after {
-            bottom: -30%;
-            font-size: 1.25rem;
-            color: #646569;
-            margin-top: -.5em; } }
+          aside#slidding_menu nav ul.sociales a {
+            color: #799900; } }
 
 div#panel {
   background-color: #fefefe;
@@ -1602,19 +1593,31 @@ i.burger {
     i.burger {
       display: none; } }
 
-nav ul.sociales li {
+ul.sociales li {
   display: inline-block; }
-  nav ul.sociales li .fa {
+  ul.sociales li .fa {
     font-size: 2em;
     padding: 2em; }
-    nav ul.sociales li .fa:hover, nav ul.sociales li .fa:active {
-      color: #c4e86b;
-      background-color: transparent; }
 
-nav ul.sociales::after {
+ul.sociales a {
+  font-size: 1.25em;
+  line-height: 1em;
+  color: #799900;
+  padding: .125em;
+  margin: 0;
+  text-decoration: none; }
+  ul.sociales a:hover, ul.sociales a:active {
+    cursor: pointer;
+    color: #3e3e3e; }
+
+ul.sociales::after {
   content: "@astudilloqro";
   display: block;
-  font-weight: 400; }
+  font-weight: 400;
+  bottom: -30%;
+  font-size: 1.25rem;
+  color: #646569;
+  margin-top: -.5em; }
 
 section.skewed {
   margin-bottom: 6em !important; }

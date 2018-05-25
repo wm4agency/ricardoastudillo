@@ -36,27 +36,38 @@ i.burger{
   @media(min-width: $large){display: none;}
 }
 
-nav ul.sociales {
+ul.sociales {
   li{
       display: inline-block;
       .fa{
           font-size: 2em;
           padding:2em;
-          //margin-top: 50px;
-
-          &:hover, &:active{
-            color: $a_green;
-            background-color:transparent;
-          }
       }
+  }
+
+  a{
+    font-size: 1.25em;
+    line-height: 1em;
+    color: $a_green_dark;
+    padding:.125em;
+    margin: 0;
+    text-decoration: none;
+
+    &:hover, &:active{cursor: pointer;color: $dark;}
   }
 
   &::after{
     content: "@astudilloqro";
     display: block;
     font-weight: 400;
+    bottom: -30%;
+    font-size: 1.25rem;
+    color: $a_grey;
+    margin-top: -.5em;
   }
 }
+
+
 
 section.skewed{
   margin-bottom: 6em!important;

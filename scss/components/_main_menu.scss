@@ -64,6 +64,11 @@ aside#slidding_menu{
 
             &:hover, &:active{color: $dark;}
         }
+
+        ul.sociales {
+          a{color: $a_green;}
+          &::after{color: $dark;}
+        }
     }
 
     @media (min-width:$large){
@@ -111,25 +116,8 @@ aside#slidding_menu{
 
           li {
             margin:0;
-            a{
-              font-size: 1.25em;
-              line-height: 1em;
-              color: $a_green_dark;
-              padding:.125em;
-              margin: 0;
-              text-decoration: none;
-
-              &:hover{cursor: pointer;color: $dark;}
-            }
           }
-
-          &::after{
-            //position: absolute;
-            bottom: -30%;
-            font-size: 1.25rem;
-            color: $a_grey;
-            margin-top: -.5em;
-          }
+          a{color: $a_green_dark;}
         }
       }
     }
