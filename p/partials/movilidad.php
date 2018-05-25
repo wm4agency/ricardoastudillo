@@ -13,7 +13,7 @@
     <figure class="mov-interconexión">
       <img alt='representación de un puente peatonal' src="images/movilidad/mov_puente.svg"/>
       <figcaption>
-        Interconexión y <strong>mejoramiento de vialidades y puentes peatonales</strong>
+        Interconexión y <strong>mejoramiento de vialidades y puentes peatonales</strong>.
       </figcaption>
     </figure>
     <figure class="mov-familia">

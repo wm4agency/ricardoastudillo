@@ -4,5 +4,5 @@
   <p><strong>30% de los cargos públicos</strong> serán para jóvenes.</p>
   <p>Crearemos la <strong>Secretaría del Deporte, Educación y Cultura</strong>.</p>
   <p>Fundaremos el 1er <strong>Consejo de Jóvenes Municipal</strong>.</p>
-  <p>Dignificaremos y activaremos <strong>espacios culturales y deportivos</strong>.</p>
+  <p>Dignificaremos y activaremos <strong>espacios culturales y deportivos.</strong>.</p>
 </div>

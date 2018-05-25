@@ -2,7 +2,7 @@
   <h1>Corregidora en <strong>Grande</strong></h1>
   <ul>
     <li>
-      <p>Reintegraremos la figura del <strong>delegado y subdelegado municipal como la autoridad más cercana a los ciudadanos</strong></p>
+      <p>Reintegraremos la figura del <strong>delegado y subdelegado municipal como la autoridad más cercana a los ciudadanos.</strong></p>
     </li>
     <li>
       <p>Designaremos la mitad del presupuesto anual a obra pública, obras que <strong>se realizarán cn base en las necesidades prioritarias de la población.</strong></p>
