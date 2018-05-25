@@ -13,6 +13,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+  <meta property="og:image" content="http://www.ricardoastudillo.info/images/ricardoastudillo_og.png"/>
+  <meta property="og:image" content="http://www.ricardoastudillo.info/images/ricardoastudillo_og.jpg.gz"/>
+  <link rel="image_src" href="images/ricardoastudillo_og.png"/>
+  <link rel="image_src" href="images/ricardoastudillo_og.jpg"/>
+
   <!-- Google Tag Manager
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
