@@ -6,10 +6,10 @@
       <p>
         Si compartes nuestra visión de un mejor Corregidora, ¡Súmate a la causa! <br />Regístrate como simpatizante y participa en las acciones que se realizarán en tu comunidad. Con tu apoyo ganaremos.</p>
     </legend>
-    <input type="text" name="nombre" id="nombre" placeholder="nombre" class="required">
+    <input type="text" name="nombre" id="nombre" placeholder="nombre" class="required" maxlength="50">
     <input type="email" name="correo" id="correo" placeholder="correo electrónico" class="required">
     <input type="tel" name="telefono" id="telefono" placeholder="teléfono (whatsapp)" class="required">
-    <input type="number" name="edad" id="edad" placeholder="edad" class="required" /><span>años</span>
+    <input type="number" name="edad" id="edad" placeholder="edad" class="required" maxlength="2" min="18" max="99" /><span>años</span>
     <label for="edad">Por ley debes tener al menos 18 años para poder registrarte como simpatizante.</label>
     <select name="comunidad" id="comunidad" class="required">
       <option class="placeholder" value="">comunidad</option>
